@@ -119,12 +119,12 @@
          font: 600 15px/1.45 "Circe";
       }
       @include xl {
-         max-width: 320px;
+         width: 320px;
          height: 70px;
          font: 600 16px/1.45 "Circe";
       }
       @include xxl {
-         max-width: 460px;
+         width: 460px;
          height: 90px;
          font: 600 20px/1.45 "Circe";
       }
