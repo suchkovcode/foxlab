@@ -25,6 +25,7 @@
       }
       @include xl {
          height: 100vh;
+         min-height: 1100px;
       }
    }
    &__content {

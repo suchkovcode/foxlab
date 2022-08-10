@@ -1,0 +1,217 @@
+.section-2 {
+   padding: 80px 20px;
+   background: var(--color_primary);
+   @include md {
+      padding: 100px 20px;
+   }
+   @include lg {
+      padding: 140px 20px;
+   }
+   @include xl {
+      padding: 160px 20px;
+   }
+   @include xxl {
+      padding: 180px 20px;
+   }
+   @include xxxl {
+      padding: 260px 20px;
+   }
+
+   &__grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 10px;
+      @include sm {
+         gap: 25px;
+      }
+      @include md {
+         grid-template-areas: 
+         'img'
+         'box';
+      }
+      @include lg {
+         grid-template-columns: 1fr 1fr;
+         grid-template-areas: 
+         'img box';
+      }
+      @include xl {
+         grid-template-columns: 0.9fr 1.1fr;
+         grid-template-areas: 
+         'img box';
+      }
+   }
+
+   &__servises-box {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 10px; 
+      @include sm {
+         grid-template-columns: 1fr 1fr;
+         gap: 25px;
+      }
+      @include md {
+         grid-area: box;
+      }
+   }
+
+   &__servises-item {
+      overflow: hidden;
+      position: relative;
+      display: block;
+      height: 100px;
+      border-radius: 20px;
+      background-color: var(--color_secondary);
+      cursor: pointer;
+      @include sm {
+         height: 170px;
+      }
+      @include md {
+         height: 200px;
+         border-radius: 28px;
+      }
+      @include xl {
+         height: 220px;
+      }
+      @include xxl {
+         height: 270px
+      }
+      @include xxxl {
+         height: 360px
+      }
+
+      &:hover > .section-2__picture > .section-2__servises-img { 
+         visibility: visible;
+         opacity: 1;
+      }
+      &:hover > .section-2__servises-title { 
+         color: var(--color_base);
+      }
+   }
+
+   &__servises-title {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      z-index: 1;
+      font: 600 16px/1.3 'Circe';
+      color: var(--color_text);
+      text-transform: uppercase;
+      transition: color 0.4s linear;
+      @include sm {
+         max-width: 200px;
+         font: 600 18px/1.3 'Circe';
+      }
+      @include md {
+         bottom: 30px;
+         left: 30px;
+         font: 600 24px/1.3 'Circe';
+      }
+      @include lg {
+         font: 600 22px/1.3 'Circe';
+      }
+      @include xxl {
+         bottom: 35px;
+         left: 35px;
+         font: 600 24px/1.3 'Circe';
+      }
+      @include xxxl {
+         bottom: 40px;
+         left: 40px;
+         font: 600 26px/1.3 'Circe';
+      }
+   }
+
+   &__servises-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1;
+      display: block;
+      width: 32px;
+      height: 32px;
+      padding: 9px;
+      border-radius: 100px;
+      background-color: var(--color_pink);
+      @include md {
+         width: 40px;
+         height: 40px;
+         top: 30px;
+         right: 30px;
+         padding: 12px;
+      }
+      @include xxl {
+         width: 45px;
+         height: 45px;
+         top: 35px;
+         right: 35px;
+      }
+      @include xxxl {
+         width: 55px;
+         height: 55px;
+         top: 40px;
+         right: 40px;
+         padding: 14px;
+      }
+      &-line {
+         width: 100%;
+         height: auto;
+      }
+   }
+
+   &__servises-img {
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      height: 110px;
+      opacity: 0;
+      object-fit: cover;
+      transition: all 0.4s linear;
+      @include sm {
+         height: 170px;
+      }
+      @include md {
+         height: 200px;
+      }
+      @include xl {
+         height: 220px;
+      }
+      @include xxl {
+         height: 270px;
+      }
+      @include xxxl {
+         height: 360px
+      }
+   }
+
+   &__hero-picture {
+      @include md {
+         grid-area: img;
+      }
+   }
+
+   &__hero-img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      object-fit: cover;
+      @include md {
+         height: 370px;
+         border-radius: 28px;
+      }
+      @include lg {
+         height: 425px;
+      }
+      @include xl {
+         height: 465px;
+      }
+      @include xxl {
+         height: 565px;
+      }
+      @include xxxl {
+         height: 745px
+      }
+   }
+}
