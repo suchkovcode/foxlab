@@ -1,6 +1,7 @@
 .section-2 {
    padding: 80px 20px;
    background: var(--color_primary);
+   contain: layout paint;
    @include md {
       padding: 100px 20px;
    }
