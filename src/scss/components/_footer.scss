@@ -156,6 +156,9 @@
       @include lg {
          padding: 20px 20px;
       }
+      @include xxl {
+         padding: 30px 20px;
+      }
       &-text {
          font: 400 14px/1.45 "Montserrat";
          color: var(--color_base);
@@ -165,6 +168,9 @@
             margin: 0 auto;
             padding: 0 20px;
             font: normal 400 16px/1.45 "Montserrat";
+         }
+         @include xxl {
+            font: normal 400 17px/1.45 "Montserrat";
          }
       }
    }
