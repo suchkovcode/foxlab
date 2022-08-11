@@ -1,6 +1,7 @@
 .section-1 {
    position: relative;
    z-index: 1;
+   contain: layout paint;
 
    &__picture {
       &::before {
@@ -56,7 +57,6 @@
       margin-bottom: 10px;
       font: var(--font_title);
       color: var(--color_base);
-      text-transform: uppercase;
       text-align: center;
    }
 
@@ -64,7 +64,6 @@
       margin-bottom: 50px;
       font: var(--font_subtitle);
       color: var(--color_base);
-      text-transform: uppercase;
       text-align: center;
       @include sm {
          max-width: 380px;
@@ -84,7 +83,6 @@
       margin: 0 auto;
       font: 600 14px/1.45 "Circe";
       color: var(--color_base);
-      text-transform: uppercase;
       text-align: center;
       border-radius: 50px;
       border: 1px solid var(--color_pink);

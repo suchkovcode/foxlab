@@ -1,0 +1,146 @@
+.section-3 {
+   padding: 100px 20px;
+   background-color: var(--color_secondary);
+   contain: layout paint;
+   content-visibility: auto;
+
+   @include xl {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "content img";
+      gap: 30px;
+      padding: 120px 20px;
+   }
+   @include xxl {
+      padding: 140px 30px;
+   }
+   @include xxxl {
+      padding: 160px 30px;
+   }
+
+   &__content {
+      display: flex;
+      flex-flow: column;
+      gap: 15px;
+      max-width: 540px;
+      margin: 0 auto 50px auto;
+      @include lg {
+         max-width: 680px;
+      }
+      @include xl {
+         grid-area: content;
+         margin: 0;
+      }
+      @include xxl {
+         max-width: 850px;
+      }
+   }
+
+   &__tag {
+      margin-bottom: 35px;
+      &-text {
+         display: inline-block;
+         padding: 5px 18px;
+         border-radius: 48px;
+         background-color: var(--color_pink);
+         font: var(--font_tag);
+         color: var(--color_base);
+         @include md {
+            padding: 7px 20px;
+         }
+         @include lg {
+            padding: 7px 22px;
+         }
+         @include xxl {
+            padding: 10px 30px;
+         }
+      }
+   }
+
+   &__title {
+      margin-bottom: 15px;
+      font: var(--font_sec3_title);
+   }
+
+   &__text {
+      font: var(--font_text);
+      &:nth-child(6) {
+         margin-top: 25px;
+      }
+      @include xl {
+         max-width: 550px;
+      }
+      @include xxl {
+         max-width: 800px;
+      }
+   }
+
+   &__img-box {
+      position: relative;
+      height: clamp(20rem, 0.1907rem + 93.2203vw, 33.75rem);
+      max-width: 540px;
+      margin: 0 auto;
+      @include lg {
+         height: 680px;
+         max-width: 680px;
+      }
+      @include xl {
+         grid-area: img;
+         height: 100%;
+         max-width: 100%;
+         margin: 0;
+      }
+   }
+
+   &__img-1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 85%;
+      height: auto;
+      border-radius: 100%;
+      @include xl {
+         max-width: 480px;
+         top: auto;
+         bottom: 0px;
+      }
+      @include xxl {
+         width: 500px;
+         max-width: none;
+         bottom: 0px;
+      }
+      @include xxxl {
+         width: 580px;
+      }
+      @media (min-width: 1780px) {
+         width: 660px;
+      }
+   }
+
+   &__img-2 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      width: 55%;
+      max-width: 220px;
+      height: auto;
+      border-radius: 100%;
+      @include lg {
+         max-width: 300px;
+      }
+      @include xl {
+         top: 0;
+         bottom: auto;
+      }
+      @include xxl {
+         max-width: 330px;
+      }
+      @include xxxl {
+         max-width: 380px;
+      }
+      @media (min-width: 1780px) {
+         max-width: 400px;
+      }
+   }
+}

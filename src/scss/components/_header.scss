@@ -4,6 +4,9 @@
    width: 100%;
    padding: 20px 20px;
    z-index: 20;
+   max-width: 2000px;
+
+
    @include lg {
       position: fixed;
       top: 30px;

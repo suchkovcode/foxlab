@@ -1,5 +1,7 @@
 .footer {
    background: var(--color_primary);
+   contain: layout paint;
+   content-visibility: auto;
 
    &__separator {
       width: calc(100% - 40px);
