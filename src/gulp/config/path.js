@@ -62,7 +62,7 @@ const path = {
       watch: "./src/libs/**/*.css",
    },
    vendorJs: {
-      src: "./src/libs/**/*.js",
+      src: ["./src/libs/jquery/*.js", "./src/libs/aos/*.js", "./src/libs/marquee/*.js", "./src/libs/ScrollSmoth/*.js"],
       dev: "./build/js/",
       pub: "./public/js/",
       watch: "./src/libs/**/*.js",
