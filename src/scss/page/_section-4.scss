@@ -68,6 +68,7 @@
             "img_1 img_5 . img_4"
             ". img_2 img_3 img_3";
          padding: 0 30px;
+         gap: 25px;
       }
       @include xxl{
          margin: 60px 0;
@@ -95,20 +96,20 @@
          height: clamp(20.625rem, -1.8733rem + 46.8714vw, 27.189rem);
       }
       @include lg {
-         height: clamp(19.68rem, -2.6877rem + 36.0769vw, 24.37rem);
+         height: clamp(18.93rem, -3.4377rem + 36.0769vw, 23.62rem);
       }
       @include xl {
-         height: clamp(24.37rem, -1.91rem + 35.04vw, 28.75rem);
+         height: clamp(23.62rem, -2.6600rem + 35.0400vw, 28rem);
          max-height: 100%;
       }
       @include xxl {
-         height: clamp(28.75rem, -2.0500rem + 35.2000vw, 34.25rem);
+         height: clamp(28rem, -3.1360rem + 35.5840vw, 33.56rem);
       }
       @include xxxl {
-         height: clamp(34.25rem, -2.2404rem + 35.3846vw, 37.125rem);
+         height: clamp(33.56rem, -2.8669rem + 35.3231vw, 36.43rem);
       }
       @media (min-width: 1780px) {
-         height: clamp(37.125rem, -2.3182rem + 35.4545vw, 42rem);
+         height: clamp(36.43rem, -3.0860rem + 35.5200vw, 40.87rem);
       }
    }
 
