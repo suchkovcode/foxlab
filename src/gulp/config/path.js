@@ -6,7 +6,7 @@ const path = {
    },
    html: {
       src: {
-         page: ["./src/html/page/*.html", "!./src/html/page/cookie.html", "!./src/html/page/privacy.html", "!./src/html/page/oferta.html"],
+         page: ["./src/html/page/*.html"],
          comp: "./src/html/components/*.html",
       },
       dev: "./build/",
