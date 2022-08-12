@@ -4,10 +4,31 @@
    max-width: 2000px;
    margin: 0 auto;
 }
-
+.contain {
+   contain: layout paint;
+   content-visibility: auto;
+}
 .t-up {
    text-transform: uppercase;
 }
 .t-lw {
    text-transform: none;
+}
+.br {
+   border-radius: 20px;
+   @include md {
+      border-radius: 28px;
+   }
+}
+.wp-100 {
+   width: 100%;
+}
+.h-a {
+   height: auto;
+}
+.d-g {
+   display: grid;
+}
+.d-f {
+   display: flex;
 }
