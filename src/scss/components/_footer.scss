@@ -1,7 +1,5 @@
 .footer {
    background: var(--color_primary);
-   contain: layout paint;
-   content-visibility: auto;
 
    &__separator {
       width: calc(100% - 40px);
@@ -9,6 +7,9 @@
       margin: 0 auto;
       background-color: #bdbdbd;
       opacity: 0.9;
+      @include lg {
+         width: calc(100% - 60px);
+      }
    }
    &__grid-container {
       display: grid;
