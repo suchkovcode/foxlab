@@ -1,8 +1,6 @@
 .section-3 {
    padding: 100px 20px;
    background-color: var(--color_secondary);
-   contain: layout paint;
-   content-visibility: auto;
 
    @include xl {
       display: grid;
