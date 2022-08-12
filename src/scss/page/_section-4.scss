@@ -1,6 +1,7 @@
 .section-4 {
    padding: 90px 0px;
    background-color: var(--color_primary);
+   contain: layout paint;
    @include lg {
       padding: 120px 0px;
    }
