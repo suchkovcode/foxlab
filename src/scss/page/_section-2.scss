@@ -19,7 +19,6 @@
    }
 
    &__grid-container {
-      display: grid;
       grid-template-columns: 1fr;
       grid-row-gap: 10px;
       @include sm {
@@ -41,7 +40,6 @@
    }
 
    &__servises-box {
-      display: grid;
       grid-template-columns: 1fr;
       grid-row-gap: 10px;
       @include sm {
@@ -56,7 +54,6 @@
    &__servises-item {
       overflow: hidden;
       position: relative;
-      display: block;
       height: 100px;
       background-color: var(--color_secondary);
       cursor: pointer;
@@ -86,7 +83,6 @@
    }
 
    &__servises-title {
-      position: absolute;
       bottom: 20px;
       left: 20px;
       z-index: 1;
@@ -115,11 +111,9 @@
    }
 
    &__servises-btn {
-      position: absolute;
       top: 20px;
       right: 20px;
       z-index: 1;
-      display: block;
       width: 32px;
       height: 32px;
       padding: 9px;
@@ -154,7 +148,6 @@
 
    &__servises-img {
       visibility: hidden;
-      position: absolute;
       top: 0;
       left: 0;
       z-index: 0;
@@ -188,7 +181,6 @@
    }
 
    &__hero-img {
-      width: 100%;
       height: auto;
       object-fit: cover;
       @include md {

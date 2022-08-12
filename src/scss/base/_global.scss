@@ -26,9 +26,29 @@
 .h-a {
    height: auto;
 }
+.m-a {
+   margin: 0 auto;
+}
+
+
+/* Dispaly */
 .d-f {
    display: flex;
 }
 .d-g {
    display: grid;
+}
+.d-b {
+   display: block;
+}
+
+/* Position */
+.p-a {
+   position: absolute;
+}
+.p-r {
+   position: relative;
+}
+.p-s {
+   position: sticky;
 }

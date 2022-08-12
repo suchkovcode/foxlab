@@ -21,7 +21,6 @@
       }
    }
    &__img {
-      width: 100%;
       object-fit: cover;
       object-position: top;
       @include lg {
@@ -78,12 +77,10 @@
    }
 
    &__btn {
-      display: flex;
       justify-content: center;
       align-items: center;
       width: 300px;
       height: 60px;
-      margin: 0 auto;
       font: 600 14px/1.45 "Circe";
       color: var(--color_base);
       text-align: center;
