@@ -92,6 +92,10 @@
             width: 50px;
             height: 50px;
          }
+         @include xxxl {
+            width: 55px;
+            height: 55px;
+         }
       }
       &-text {
          font: 400 15px/1 "Montserrat";
@@ -101,6 +105,9 @@
          }
          @include xxl {
             font: 400 18px/1 "Montserrat";
+         }
+         @include xxxl {
+            font: 400 20px/1 "Montserrat";
          }
       }
 
