@@ -8,6 +8,7 @@
    border: 1px solid var(--color_pink);
    background-color: transparent;
    transition: background-color, 0.3s linear;
+   cursor: pointer;
    @include md {
       height: 65px;
    }
