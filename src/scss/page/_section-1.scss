@@ -75,35 +75,4 @@
          max-width: 100%;
       }
    }
-
-   &__btn {
-      justify-content: center;
-      align-items: center;
-      width: 300px;
-      height: 60px;
-      font: 600 14px/1.45 "Circe";
-      color: var(--color_base);
-      text-align: center;
-      border-radius: 50px;
-      border: 1px solid var(--color_pink);
-      background-color: transparent;
-      transition: background-color, 0.3s linear;
-      @include md {
-         height: 65px;
-         font: 600 15px/1.45 "Circe";
-      }
-      @include xl {
-         width: 320px;
-         height: 70px;
-         font: 600 16px/1.45 "Circe";
-      }
-      @include xxl {
-         width: 460px;
-         height: 90px;
-         font: 600 20px/1.45 "Circe";
-      }
-      &:hover {
-         background-color: var(--color_pink);
-      }
-   }
 }

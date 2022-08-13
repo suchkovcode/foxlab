@@ -1,0 +1,27 @@
+.btn {
+   width: 300px;
+   height: 60px;
+   font: var(--font_btn);
+   color: var(--color_base);
+   text-align: center;
+   border-radius: 50px;
+   border: 1px solid var(--color_pink);
+   background-color: transparent;
+   transition: background-color, 0.3s linear;
+   @include md {
+      height: 65px;
+   }
+   @include xl {
+      width: 320px;
+      height: 70px;
+   }
+   @include xxl {
+      width: 460px;
+      height: 90px;
+   }
+   &:hover,
+   &:active,
+   &:focus  {
+      background-color: var(--color_pink);
+   }
+}
