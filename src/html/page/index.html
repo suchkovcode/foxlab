@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-   @loop("html/components/head.html", "../../data/head.json")   
+   @loop("html/components/head.html", "../../data/head.json")
    <body class="page">
       @include('html/components/header.html')
       <main class="main">
@@ -149,7 +149,65 @@
                <span class="section-4__marquee-text t-up">fox.lab</span>
             </div>
          </section>
-         <section class="section-5"></section>
+         <section class="section-5 contain">
+            <div class="section-5__header">
+               <div class="section-5__tag d-ib">
+                  <p class="section-5__tag-text t-up d-ib">ACTIONS</p>
+               </div>
+               <h2 class="section-5__title t-up">
+                  We are acting <br />
+                  SPECIAL OFFERS
+               </h2>
+            </div>
+            <div class="section-5__offer d-g gap">
+               <div class="section-5__offer-item section-5__offer-1 d-f fd-c br">
+                  <div class="section-5__offer-btn d-f jc-c ai-c">
+                     <p class="section-5__offer-text t-up">01</p>
+                  </div>
+                  <h3 class="section-5__offer-title t-up">For those in our studio for the first time</h3>
+                  <ul class="section-5__offer-bullet d-f fd-c">
+                     <li class="section-5__offer-bullet-item d-f">Free laser hair removal of the axillary cavity or any face zone</li>
+                     <li class="section-5__offer-bullet-item d-f">
+                        <p>The first carbon peeling procedure at a price of <strong>$50</strong></p>
+                     </li>
+                     <li class="section-5__offer-bullet-item d-f">
+                        <p>The first Velashape procedure <strong>$100</strong></p>
+                     </li>
+                  </ul>
+               </div>
+               <picture class="section-5__picture br">
+                  <source srcset="/img/webp/section-5__hero.webp" type="image/webp" />
+                  <img class="section-5__img br" src="/img/png/section-5__hero.png" loading="lazy" alt="Girl 1" width="300" height="200" />
+               </picture>
+               <div class="section-5__offer-item section-5__offer-2 d-f fd-c br">
+                  <div class="section-5__offer-btn d-f jc-c ai-c">
+                     <p class="section-5__offer-text t-up">02</p>
+                  </div>
+                  <h3 class="section-5__offer-title t-up">-10% on birthday</h3>
+                  <ul class="section-5__offer-bullet d-f fd-c">
+                     <li class="section-5__offer-bullet-item d-f">The discount is valid for all the services of the studio on the birthday, 3 days before and 3 days after</li>
+                  </ul>
+               </div>
+               <div class="section-5__offer-item section-5__offer-3 d-f fd-c br">
+                  <div class="section-5__offer-btn d-f jc-c ai-c">
+                     <p class="section-5__offer-text t-up">03</p>
+                  </div>
+                  <h3 class="section-5__offer-title t-up">Loyalty system</h3>
+                  <ul class="section-5__offer-bullet d-f fd-c">
+                     <li class="section-5__offer-bullet-item d-f">Regular customers of our studio are operating cards with an increasing discount</li>
+                  </ul>
+               </div>
+               <div class="section-5__offer-item section-5__offer-4 d-f fd-c br">
+                  <div class="section-5__offer-btn d-f jc-c ai-c">
+                     <p class="section-5__offer-text t-up">04</p>
+                  </div>
+                  <h3 class="section-5__offer-title t-up">-10% for a new subscription</h3>
+                  <ul class="section-5__offer-bullet d-f fd-c">
+                     <li class="section-5__offer-bullet-item d-f">When buying an old subscription on the last procedure</li>
+                  </ul>
+               </div>
+            </div>
+         </section>
       </main>
       @include('html/components/footer.html')
    </body>
