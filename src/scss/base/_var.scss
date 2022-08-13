@@ -10,8 +10,10 @@
 
    --font_text: 400 14px/1.45 "Montserrat";
    --font_tag:  400 14px/1.45 "Circe";
+   --font_btn: 600 14px/1.45 "Circe";
 
    --font_sec3_title: 400 26px/1.3 "Circe";
+   --font_sec6_title: 400 32px/1.3 "Circe";
 }
 
 
@@ -29,6 +31,7 @@
       --font_tag:  400 16px/1.45 "Circe";
 
       --font_sec3_title: 400 32px/1.3 "Circe";
+      --font_sec6_title: 400 44px/1.3 "Circe";
    }
 }
 
@@ -39,19 +42,22 @@
 
       --font_text: 400 18px/1.45 "Montserrat";
       --font_tag:  400 18px/1.45 "Circe";
+      --font_btn: 600 15px/1.45 "Circe";
 
       --font_sec3_title:400 38px/1.3 "Circe";
+      --font_sec6_title: 400 52px/1.3 "Circe";
    }
 }
 @include lg {
    :root {
       --font_title: 400 62px/1.3 "Circe";
-      --font_subtitle: 400 16px/1.45 "Montserrat";
+      --font_subtitle: 400 17px/1.45 "Montserrat";
 
       --font_text: 400 20px/1.45 "Montserrat";
       --font_tag: 400 18px/1.45 "Circe";
 
       --font_sec3_title: 400 42px/1.3 "Circe";
+      --font_sec6_title: 400 62px/1.3 "Circe";
    }
 }
 @include xl {
@@ -61,8 +67,10 @@
 
       --font_text: 400 18px/1.45 "Montserrat";
       --font_tag: 400 20px/1.45 "Circe";
+      --font_btn: 600 16px/1.45 "Circe";
 
       --font_sec3_title: 400 44px/1.3 "Circe";
+      --font_sec6_title: 400 72px/1.3 "Circe";
    }
 }
 @include xxl {
@@ -72,8 +80,10 @@
 
       --font_text: 400 20px/1.45 "Montserrat";
       --font_tag: 400 22px/1.45 "Circe";
+      --font_btn: 600 20px/1.45 "Circe";
 
       --font_sec3_title: 400 52px/1.3 "Circe";
+      --font_sec6_title: 400 90px/1.3 "Circe";
    }
 }
 @include xxxl {
