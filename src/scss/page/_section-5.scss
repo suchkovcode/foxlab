@@ -117,10 +117,10 @@
          @include lg {
             font: 600 24px/1.3 "Circe";
          }
-         @include xl {
+         @include xxl {
             font: 600 26px/1.3 "Circe";
          }
-         @include xxl {
+         @include xxxl {
             font: 600 30px/1.3 "Circe";
          }
       }
@@ -142,10 +142,10 @@
          @include lg {
             font: 400 16px/1.45 "Montserrat";
          }
-         @include xxl{
+         @include xxl {
             font: 400 18px/1.45 "Montserrat";
          }
-         @include xxxl{
+         @include xxxl {
             font: 400 20px/1.45 "Montserrat";
          }
          &::before {
@@ -173,7 +173,7 @@
       min-height: 200px;
       object-fit: cover;
       @include xxl {
-         min-height: 265px;
+         min-height: 335px;
       }
    }
 
