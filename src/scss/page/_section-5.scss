@@ -157,6 +157,12 @@
             margin-top: 8px;
             border-radius: 100px;
             background-color: var(--color_text);
+            @include xl {
+               min-width: 6px;
+               min-height: 6px;
+               max-height: 6px;
+               margin-top: 9px;
+            }
          }
       }
    }
