@@ -9,11 +9,11 @@
    @include lg {
       position: sticky;
       top: 30px;
-      left: 20px;
-      width: calc(100% - 40px);
+      left: 30px;
+      width: calc(100% - 60px);
       padding: 20px 40px;
       border-radius: 70px;
-      background-color: var(--color_primary);
+      background-color: var(--color_base);
    }
    @include xl {
       padding: 20px 50px;
