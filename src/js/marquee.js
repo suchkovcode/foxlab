@@ -1,5 +1,5 @@
 $(".section-4__marquee-1").marquee({
-   duration: 22000,
+   duration: 21000,
    gap: 20,
    delayBeforeStart: 0,
    startVisible: true, 
@@ -7,7 +7,7 @@ $(".section-4__marquee-1").marquee({
    duplicated: true,
 });
 $(".section-4__marquee-2").marquee({
-   duration: 22000,
+   duration: 21000,
    gap: 20,
    delayBeforeStart: 0,
    startVisible: true,
