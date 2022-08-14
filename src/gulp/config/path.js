@@ -60,9 +60,9 @@ const path = {
       dev: "./build/css/",
       pub: "./public/css/",
       watch: "./src/libs/**/*.css",
-   },
+   }, 
    vendorJs: {
-      src: ["./src/libs/**/*.js"],
+      src: ["./src/libs/jquery/*.js","./src/libs/**/*.js" ],
       dev: "./build/js/",
       pub: "./public/js/",
       watch: "./src/libs/**/*.js",
