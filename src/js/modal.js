@@ -13,11 +13,4 @@ window.addEventListener("DOMContentLoaded", () => {
       body.classList.remove("pop-up");
       modal.classList.remove("open");
    });
-
-   const element = document.getElementById("input2");
-   const maskOptions = {
-      mask: "+{0}(000)000-00-00",
-      lazy: false, 
-   };
-   const mask = IMask(element, maskOptions);
 });
