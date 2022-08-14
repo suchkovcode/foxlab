@@ -35,6 +35,7 @@ const vendorCSS = () => {
 const vendorJs = () => {
    return $.gulp.src($.path.vendorJs.src)
       .pipe($.app.size({ title: "Размер файлов:" }))
+      .pipe($.app.jsmin())
       .pipe($.app.concat("vendor.js"))
       .pipe($.app.rename({ extname: ".min.js" }))
       .pipe($.gulp.dest($.path.vendorJs.pub));
