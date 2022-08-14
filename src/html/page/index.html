@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    @loop("html/components/head.html", "../../data/head.json")
-   <body class="page">
+   <body class="page p-r">
       @include('html/components/header.html')
       <main class="main">
          <section id="top" class="section-1">
@@ -210,16 +210,17 @@
          </section>
          <section class="section-6 contain p-r">
             <picture class="section-6__picture">
-               <source src="/img/webp/section-6__hero.webp" type="image/webp">
-               <img class="section-6__hero"src="/img/png/section-6__hero.png" alt="" loading="lazy"  width="340" height="350">
+               <source srcset="/img/webp/section-6__hero.webp" type="image/webp" />
+               <img class="section-6__hero" src="/img/png/section-6__hero.png" alt="2 woman" loading="lazy" width="340" height="350" />
             </picture>
             <div class="section-6__content p-a d-f fd-c">
                <h2 class="section-6__title t-up">GIFT CERTIFICATES</h2>
                <p class="section-6__subtitle">For any amount or plastic cards with a face value</p>
                <p class="section-6__cta t-up">100, 200 and 500 dollars</p>
-               <a class="btn t-up d-f m-a ai-c jc-c" href="#">Select a certificate</a>
+               <button id="popUpBtn" class="btn t-up d-f m-a ai-c jc-c" href="#">Select a certificate</button>
             </div>
          </section>
+         @include('html/components/modal.html')
       </main>
       @include('html/components/footer.html')
    </body>
