@@ -62,6 +62,7 @@
       &-link {
          font: 400 14px/1.45 "Montserrat";
          color: var(--color_text);
+         transition: all 0.2s linear;
          @include sm {
             font: 400 16px/1.45 "Montserrat";
          }
@@ -85,6 +86,7 @@
       &-link {
          font: 400 14px/1.45 "Montserrat";
          color: var(--color_text);
+         transition: all 0.2s linear;
          @include sm {
             font: 400 16px/1.45 "Montserrat";
          }
@@ -144,6 +146,7 @@
       }
       &-link {
          color: inherit;
+         transition: all 0.2s linear;
          &:hover {
             color: var(--color_pink);
          }
