@@ -1,0 +1,180 @@
+.section-7 {
+   padding: 90px 20px;
+   @include md {
+      padding: 120px 20px;
+   }
+   @include lg {
+      padding: 140px 30px;
+   }
+   @include xl {
+      padding: 160px 30px;
+   }
+   @include xxl {
+      padding: 180px 30px;
+   }
+   @include xxxl {
+      padding: 200px 30px;
+   }
+   &__header {
+      margin-bottom: 30px;
+      @include lg {
+         margin-bottom: 50px;
+      }
+   }
+
+   &__tag {
+      margin-bottom: 35px;
+      &-text {
+         padding: 5px 18px;
+         border-radius: 48px;
+         background-color: var(--color_pink);
+         font: var(--font_tag);
+         color: var(--color_base);
+         @include md {
+            padding: 7px 20px;
+         }
+         @include lg {
+            padding: 7px 22px;
+         }
+         @include xxl {
+            padding: 10px 30px;
+         }
+      }
+   }
+
+   &__title {
+      font: var(--font_sec3_title);
+   }
+
+   &__card-box {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      @include md {
+         grid-template-columns: 1fr 1fr;
+         grid-template-areas:
+            "card_1 card_2"
+            "video video";
+      }
+      @include lg {
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-areas: "video card_1 card_2";
+      }
+   }
+   &__picture {
+   }
+
+   &__img {
+      object-position: top;
+      object-fit: cover;
+      @include sm {
+         height: 500px;
+      }
+      @include md {
+         height: 580px;
+      }
+      @include xxl{
+         height: 640px;
+      }
+      @include xxxl{
+         height: 690px;
+      }
+   }
+
+   &__card-info {
+      left: 0;
+      bottom: 0px;
+      padding: 20px;
+      @include md {
+         height: 305px;
+      }
+      @include lg {
+         height: 360px;
+      }
+      @include xl {
+         height: 310px;
+      }
+      @include xxl {
+         padding: 30px;
+         height: 355px;
+      }
+   }
+
+   &__card-tag {
+      margin-bottom: 25px;
+      padding: 8px 15px;
+      font: var(--font_card_tag);
+      color: var(--color_text);
+      border: 1px solid var(--color_text);
+      @include xxl {
+         padding: 10px 18px;
+      }
+ 
+   }
+
+   &__card-title {
+      margin-bottom: 15px;
+      font: var(--font_card_title);
+   }
+
+   &__card-subtitle {
+      font: var(--font_card_subtitle);
+   }
+
+   &__card-1 {
+      height: 590px;
+      @include sm {
+         height: 650px;
+      }
+      @include md {
+         height: 550px;
+      }
+      @include md {
+         height: 680px;
+         grid-area: card_1;
+      }
+      @include xxl {
+         height: 800px;
+      }
+      @include xxxl {
+         height: 950px;
+      }
+   }
+   &__card-2 {
+      height: 650px;
+      @include sm {
+         height: 680px;
+      }
+      @include md {
+         grid-area: card_2;
+      }
+      @include xxl {
+         height: 800px;
+      }
+      @include xxxl {
+         height: 950px;
+      }
+   }
+
+   &__card-3 {
+      @include md {
+         grid-area: video;
+      }
+   }
+
+   &__video {
+      object-position: top;
+      object-fit: cover;
+      @include md {
+         object-position: center;
+      }
+      @include lg {
+         height: 680px;
+      }
+      @include xxl {
+         height: 800px;
+      }
+      @include xxxl {
+         height: 950px;
+      }
+   }
+}
