@@ -57,8 +57,8 @@ validate
       },
       {
          rule: "maxLength",
-         value: 12,
-         errorMessage: "Maximum 12 characters",
+         value: 13,
+         errorMessage: "Maximum 13 characters",
       },
    ]);
    var cleave = new Cleave('#inputTel', {
