@@ -1,43 +1,48 @@
 <div id="modal" class="modal d-n jc-c ai-fs p-f contain">
-   <div class="modal__wraper p-r bg-p">
-      <button id="popUpClose" class="modal__close-btn p-a d-f jc-c ai-c bg-s">
-         <span class="modal__close-icon bg-b"></span>
-      </button>
-      <picture class="modal__picture">
-         <source srcset="/img/webp/section-6__pop-up.webp" type="image/webp" />
-         <img class="modal__img" src="/img/png/section-6__pop-up.png" loading="lazy" alt="Pop-up img" width="340" height="220" />
-      </picture>
+   <div class="modal__wraper p-r bg-p wp-100">
+      <header class="modal__header">
+         <button id="popUpClose" class="modal__close-btn p-a d-f jc-c ai-c bg-s">
+            <span class="modal__close-icon bg-b"></span>
+         </button>
+         <picture class="modal__picture">
+            <source srcset="/img/webp/section-6__pop-up.webp" type="image/webp" />
+            <img class="modal__img" src="/img/png/section-6__pop-up.png" loading="lazy" alt="Pop-up img" width="340" height="220" />
+         </picture>
+      </header>
       <div class="modal__content bg-p">
          <h2 class="modal__title t-up">Make a certificate by filling out the form</h2>
          <p class="modal__subtitle">You can pick up and pay for the finished certificate in the studio at: Naro-Fominsk, Tureka Park, 26</p>
-         <form class="modal__form form" action="#" method="post">
-            <div class="form__container">
+         <form class="modal__form form" action="#">
+            <div class="form__checkbox-container">
                <h3 class="form__title t-up">Select a certificate</h3>
                <p class="form__subtitle">You can choose several</p>
                <label class="form__checkbox-item d-f ai-c p-r">
-                  <input id="input1" class="form__checkbox-input p-r" type="checkbox" name="crt-1" />
+                  <input class="form__checkbox-input p-r" type="checkbox" name="crt-1" />
                   <span class="form__checkbox-label d-b">$100</span>
                </label>
                <label class="form__checkbox-item d-f ai-c p-r">
-                  <input id="input1" class="form__checkbox-input p-r" type="checkbox" name="crt-2" />
+                  <input class="form__checkbox-input p-r" type="checkbox" name="crt-2" />
                   <span class="form__checkbox-label d-b">$300</span>
                </label>
                <label class="form__checkbox-item d-f ai-c p-r">
-                  <input id="input3" class="form__checkbox-input p-r" type="checkbox" name="crt-3" />
+                  <input class="form__checkbox-input p-r" type="checkbox" name="crt-3" />
                   <span class="form__checkbox-label d-b">$500</span>
                </label>
             </div>
-            <div class="form__input-item">
-               <label for="input1" class="form__input-label t-up">Name of owner certificate</label>
-               <input id="input1" class="form__input-text" type="text" name="name" placeholder="For example, Maria Ivanova" required />
-            </div>
-            <div class="form__input-item d-f fd-c p-r">
-               <label for="input2" class="form__input-label t-up">YOUR PHONE NUMBER</label>
-               <input id="input2" class="form__input-text" type="tel" name="tel" placeholder="+1 (206) 555-2525" required />
+            <div class="form__input-container d-f fd-c">
+               <div class="form__input-item">
+                  <label for="inputName" class="form__input-label t-up">Name of owner certificate</label>
+                  <input id="inputName" class="form__input-text" type="text" name="name" placeholder="For example, Maria Ivanova" autocomplete="off" />
+               </div>
+               <div class="form__input-item d-f fd-c p-r">
+                  <label for="inputTel" class="form__input-label t-up">YOUR PHONE NUMBER</label>
+                  <input id="inputTel" class="form__input-text" type="tel" name="tel" placeholder="+1 (206) 555-2525" autocomplete="off" />
+               </div>
             </div>
             <button class="form__btn t-up bg-s t-up" type="submit">ORDER</button>
          </form>
          <p class="form__policy">By clicking on the button, you consent to the processing of personal data and agree with the terms of the <a class="form__mark" href="/policy.html">privacy policy</a></p>
       </div>
    </div>
+   <div class="modal__overlay p-a wp-100"></div>
 </div>
