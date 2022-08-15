@@ -16,11 +16,8 @@
       visibility: visible;
       opacity: 1;
    }
-   &::after {
-      content: " ";
-      width: 100%;
+   &__overlay {
       height: 100%;
-      position: absolute;
       top: 0;
       left: 0;
       z-index: -1;
@@ -32,7 +29,6 @@
    }
 
    &__wraper {
-      width: 100%;
       height: fit-content;
 
       @include sm {
@@ -100,7 +96,7 @@
    }
 }
 .form {
-   &__container {
+   &__checkbox-container {
       margin-bottom: 30px;
    }
 
@@ -161,6 +157,10 @@
          transition: all 0.2s ease-in-out 0.1s;
       }
    }
+   &__input-container {
+      gap: 25px;
+      margin-bottom: 30px;
+   }
    &__input-label {
       margin-bottom: 10px;
       font: 400 16px/1 "Montserrat";
@@ -171,7 +171,6 @@
       height: 45px;
       border-radius: 7px;
       padding: 0 15px;
-      margin-bottom: 25px;
       border: 1px solid var(--color_secondary);
       font: 400 16px/1 "Circe";
       @include md {
@@ -184,6 +183,18 @@
       &:focus {
          border: 1px solid var(--color_pink);
       }
+   }
+
+   &__input-error {
+      border: 1px solid red !important;
+   }
+   &__label-error {
+      margin-top: 2px;
+      color: red !important;
+   }
+
+   &__input-success {
+      border: 1px solid green;
    }
 
    &__btn {
