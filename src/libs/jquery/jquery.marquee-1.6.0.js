@@ -1,5 +1,5 @@
 /*!
- * jQuery Jquery Marquee - v1.6.0 - 2021-25-02
+ * jQuery Marquee - v1.6.0 - 2021-25-02
  * https://github.com/aamirafridi/jQuery.Marquee
  * Copyright (c) 2017 Karl Swedberg
  * Licensed MIT
