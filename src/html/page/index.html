@@ -4,12 +4,12 @@
    <body class="page p-r">
       @include('html/components/header.html')
       <main class="main">
-         <section id="top" class="section-1">
+         <section id="top" class="section-1 p-r">
             <picture class="section-1__picture">
                <source srcset="/img/webp/section-1__hero.webp" />
                <img class="section-1__img wp-100" src="/img/png/section-1__hero.png" loading="lazy" alt="Img girl" width="340" height="700" />
             </picture>
-            <div class="section-1__content">
+            <div class="section-1__content p-a">
                <h1 class="section-1__title t-up">Body aesthetics studio</h1>
                <p class="section-1__subtitle t-up">Beauty does not require sacrifice.Beauty requires attention</p>
                <a class="btn t-up d-f m-a ai-c jc-c" href="#">Sign up for the procedure</a>
@@ -259,8 +259,7 @@
                </div>
             </div>
          </section>
-         <section id="contact" class="section-8">
-
+         <section id="contact" class="section-8 contain">
          </section>
          @include('html/components/modal.html')
       </main>
