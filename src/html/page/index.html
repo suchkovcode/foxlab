@@ -4,7 +4,7 @@
    <body class="page p-r">
       @include('html/components/header.html')
       <main class="main">
-         <section id="top" class="section-1 p-r">
+         <section id="top" class="section-1 contain">
             <picture class="section-1__picture">
                <source srcset="/img/webp/section-1__hero.webp" />
                <img class="section-1__img wp-100" src="/img/png/section-1__hero.png" loading="lazy" alt="Img girl" width="340" height="700" />
@@ -12,7 +12,7 @@
             <div class="section-1__content p-a">
                <h1 class="section-1__title t-up">Body aesthetics studio</h1>
                <p class="section-1__subtitle t-up">Beauty does not require sacrifice.Beauty requires attention</p>
-               <a class="btn t-up d-f m-a ai-c jc-c" href="#">Sign up for the procedure</a>
+               <a class="btn t-up d-f m-a ai-c jc-c" href="http://arn.su/EDj">Sign up for the procedure</a>
             </div>
          </section>
          <section id="services" class="section-2 contain bg-p">
@@ -151,8 +151,8 @@
          </section>
          <section id="actions" class="section-5 contain">
             <div class="section-5__header">
-               <div class="section-5__tag d-ib">
-                  <p class="section-5__tag-text t-up d-ib">ACTIONS</p>
+               <div class="tag d-ib">
+                  <p class="tag-text t-up d-ib">ACTIONS</p>
                </div>
                <h2 class="section-5__title t-up">
                   We are acting <br />
@@ -208,7 +208,7 @@
                </div>
             </div>
          </section>
-         <section id="certificate" class="section-6 contain p-r">
+         <section id="certificate" class="section-6 contain">
             <picture class="section-6__picture">
                <source srcset="/img/webp/section-6__hero.webp" type="image/webp" />
                <img class="section-6__hero" src="/img/png/section-6__hero.png" alt="2 woman" loading="lazy" width="340" height="350" />
@@ -222,8 +222,8 @@
          </section>
          <section id="specialists" class="section-7 contain bg-s">
             <div class="section-7__header">
-               <div class="section-7__tag d-ib">
-                  <p class="section-7__tag-text t-up d-ib">Specialists</p>
+               <div class="tag d-ib">
+                  <p class="tag-text t-up d-ib">Specialists</p>
                </div>
                <h2 class="section-7__title t-up">
                   In our studio they <br />
@@ -254,12 +254,58 @@
                   </div>
                </div>
                <div class="section-7__card-3">
-                  <video class="section-7__video br wp-100" src="/video/section-7__video.mp4" width="300" height="450" autoplay loop muted>
-                  </video>
+                  <video class="section-7__video br wp-100" src="/video/section-7__video.mp4" width="300" height="450" autoplay loop muted></video>
                </div>
             </div>
          </section>
-         <section id="contact" class="section-8 contain">
+         <section id="contact" class="section-8 contain bg-p">
+            <div class="section-8__header">
+               <div class="tag d-ib">
+                  <p class="tag-text t-up d-ib">CONTACTS</p>
+               </div>
+               <h2 class="section-8__title t-up">We are waiting for you in our studio</h2>
+            </div>
+            <div class="section-8__grid-container d-g gap">
+               <div class="section-8__card section-8__card-1 bg-s br">
+                  <h3 class="section-8__card-title t-up">OUR ADDRESS</h3>
+                  <ul class="section-8__card-bullet d-f fd-c">
+                     <li class="section-8__card-bullet-item d-f"><address class="section-8__card-adress">city of Naro-Fominsk, Tureka Park, 26</address></li>
+                     <li class="section-8__card-bullet-item d-f">daily with 10: 00-21: 00</li>
+                  </ul>
+               </div>
+               <div class="section-8__card section-8__card-2 bg-s br">
+                  <h3 class="section-8__card-title t-up">CALL US</h3>
+                  <ul class="section-8__card-bullet d-f fd-c">
+                     <li class="section-8__card-bullet-item d-f"><a class="section-8__card-link" href="tel:79912435063">+1-991-243-50-63 Studio</a></li>
+                     <li class="section-8__card-bullet-item d-f"><a class="section-8__card-link" href="tel:79067030075">+1-906-703-00-75 Victoria, leader</a></li>
+                  </ul>
+               </div>
+               <div class="section-8__social-box d-f fd-c">
+                  <a class="section-8__social-item d-f ai-c p-r wp-100" href="https://t.me/foxlabnf">
+                     <span class="section-8__social-link t-up d-ib">Telegram</span>
+                     <span class="section-8__social-btn p-a d-b bg-pink">
+                        <img class="section-8__social-btn-line" src="/img/svg/line.svg" loading="lazy" alt="Line" width="13" height="13" />
+                     </span>
+                  </a>
+                  <a class="section-8__social-item d-f ai-c p-r wp-100" href="https://instagram.com/fox.lab.nf?igshid=YmMyMTA2M2Y=">
+                     <span class="section-8__social-link t-up d-ib">Instagram</span>
+                     <span class="section-8__social-btn p-a d-b bg-pink">
+                        <img class="section-8__social-btn-line" src="/img/svg/line.svg" loading="lazy" alt="Line" width="13" height="13" />
+                     </span>
+                  </a>
+                  <a class="section-8__social-item d-f ai-c p-r wp-100" href="https://vk.com/foxlabnf">
+                     <span class="section-8__social-link t-up d-ib">Vkontakte</span>
+                     <span class="section-8__social-btn p-a d-b bg-pink">
+                        <img class="section-8__social-btn-line" src="/img/svg/line.svg" loading="lazy" alt="Line" width="13" height="13" />
+                     </span>
+                  </a>
+                  <a class="section-8__btn t-up d-f m-a ai-c jc-c bg-pink wp-100 t-up" href="http://arn.su/EDj">Sign up for the procedure</a>
+               </div>
+               <picture class="section-8__picture">
+                  <source srcset="/img/webp/section-8__img.webp" type="image/webp" />
+                  <img class="section-8__img br wp-100" src="/img/png/section-8__img.png" alt="Img procedure" loading="lazy" width="300" height="370" />
+               </picture>
+            </div>
          </section>
          @include('html/components/modal.html')
       </main>
