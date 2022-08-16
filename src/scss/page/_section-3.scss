@@ -17,8 +17,6 @@
    }
 
    &__content {
-      display: flex;
-      flex-flow: column;
       gap: 15px;
       max-width: 540px;
       margin: 0 auto 50px auto;
@@ -31,27 +29,6 @@
       }
       @include xxl {
          max-width: 850px;
-      }
-   }
-
-   &__tag {
-      margin-bottom: 35px;
-      &-text {
-         display: inline-block;
-         padding: 5px 18px;
-         border-radius: 48px;
-         background-color: var(--color_pink);
-         font: var(--font_tag);
-         color: var(--color_base);
-         @include md {
-            padding: 7px 20px;
-         }
-         @include lg {
-            padding: 7px 22px;
-         }
-         @include xxl {
-            padding: 10px 30px;
-         }
       }
    }
 
@@ -74,7 +51,6 @@
    }
 
    &__img-box {
-      position: relative;
       height: clamp(20rem, 0.1907rem + 93.2203vw, 33.75rem);
       max-width: 540px;
       margin: 0 auto;
@@ -91,7 +67,6 @@
    }
 
    &__img-1 {
-      position: absolute;
       top: 0;
       left: 0;
       width: 85%;
@@ -116,7 +91,6 @@
    }
 
    &__img-2 {
-      position: absolute;
       bottom: 0;
       right: 0;
       z-index: 1;
