@@ -72,6 +72,7 @@
       &:hover > .section-2__servises-picture > .section-2__servises-img {
          visibility: visible;
          opacity: 1;
+
       }
       &:hover > .section-2__servises-title {
          color: var(--color_base);
@@ -150,13 +151,15 @@
       height: 110px;
       opacity: 0;
       object-fit: cover;
-      transition: visibility 0.4s linear;
 
       @include sm {
          height: 170px;
       }
       @include md {
          height: 200px;
+      }
+      @include lg {
+         transition: all 0.4s linear;
       }
       @include xl {
          height: 220px;
