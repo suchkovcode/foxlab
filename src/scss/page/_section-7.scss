@@ -22,26 +22,6 @@
       }
    }
 
-   &__tag {
-      margin-bottom: 35px;
-      &-text {
-         padding: 5px 18px;
-         border-radius: 48px;
-         background-color: var(--color_pink);
-         font: var(--font_tag);
-         color: var(--color_base);
-         @include md {
-            padding: 7px 20px;
-         }
-         @include lg {
-            padding: 7px 22px;
-         }
-         @include xxl {
-            padding: 10px 30px;
-         }
-      }
-   }
-
    &__title {
       font: var(--font_sec3_title);
    }
@@ -59,8 +39,6 @@
          grid-template-columns: 1fr 1fr 1fr;
          grid-template-areas: "video card_1 card_2";
       }
-   }
-   &__picture {
    }
 
    &__img {
