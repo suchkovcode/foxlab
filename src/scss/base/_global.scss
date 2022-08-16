@@ -8,8 +8,27 @@
 }
 .contain {
    contain: layout paint;
-   content-visibility: auto;
 }
+.tag {
+   margin-bottom: 35px;
+   &-text {
+      padding: 5px 18px;
+      border-radius: 48px;
+      background-color: var(--color_pink);
+      font: var(--font_tag);
+      color: var(--color_base);
+      @include md {
+         padding: 7px 20px;
+      }
+      @include lg {
+         padding: 7px 22px;
+      }
+      @include xxl {
+         padding: 10px 30px;
+      }
+   }
+}
+
 .t-up {
    text-transform: uppercase;
 }
