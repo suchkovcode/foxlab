@@ -2,10 +2,10 @@ const img = () => {
    return $.gulp
       .src($.path.img.src)
       .pipe($.app.size({ title: "Размер до сжатия:" }))
-      // .pipe($.app.imagemin({ verbose: true })).on("error", $.app.notify.onError({
-      //    message: "Error: <%= error.message %>",
-      //    title: "Error running something"
-      // }))
+      .pipe($.app.imagemin({ verbose: true })).on("error", $.app.notify.onError({
+         message: "Error: <%= error.message %>",
+         title: "Error running something"
+      }))
       .pipe($.app.size({ title: "Размер после сжатия:" }))
       .pipe($.gulp.dest($.path.img.pub));
 }
