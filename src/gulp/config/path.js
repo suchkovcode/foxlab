@@ -62,7 +62,7 @@ const path = {
       watch: "./src/libs/**/*.css",
    }, 
    vendorJs: {
-      src: ["./src/libs/jquery/*.js", "./src/libs/luxy/*.js", "./src/libs/justValidate/*.js", "./src/libs/cleave/cleave-1.6.0.js", "./src/libs/cleave/cleave-phone.us.min.js"],
+      src: ["./src/libs/jquery/*.js", "./src/libs/justValidate/*.js", "./src/libs/cleave/cleave-1.6.0.js", "./src/libs/cleave/cleave-phone.us.min.js"],
       dev: "./build/js/",
       pub: "./public/js/",
       watch: "./src/libs/**/*.js",
