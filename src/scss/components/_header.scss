@@ -5,7 +5,6 @@
    padding: 20px 20px;
    z-index: 20;
 
-
    @include lg {
       position: fixed;
       top: 30px;
@@ -27,36 +26,14 @@
    }
 
    &__logo {
-      display: block;
-      position: relative;
       z-index: 1;
-      &.active > .header__logo-white {
-         display: none;
-         @include sm {
-            display: block;
-         }
-      }
-      &.active > .header__logo-dark {
-         display: block;
-         @include sm {
-            display: none;
-         }
-      }
       &-img {
+         &.active > path {
+            fill: #182A31;
+         }
          @include xl {
             width: 140px;
             height: auto;
-         }
-      }
-      &-white {
-         @include lg {
-            display: none;
-         }
-      }
-      &-dark {
-         display: none;
-         @include lg {
-            display: block;
          }
       }
    }
@@ -130,7 +107,7 @@
       justify-content: space-between;
       width: 100%;
       height: 90vh;
-      min-height: 550px;
+      min-height: fit-content;
       padding: 80px 20px 30px 20px;
       background-color: var(--color_primary);
       transition: right 0.2s linear, visibility 0.2s linear;
