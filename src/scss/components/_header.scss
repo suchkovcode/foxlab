@@ -27,9 +27,17 @@
 
    &__logo {
       z-index: 1;
+      @include lg {
+         height: 23.3px;
+      }
       &-img {
          &.active > path {
-            fill: #182A31;
+            fill: #182a31;
+         }
+         & > path {
+            @include lg {
+               fill: #182a31;
+            }
          }
          @include xl {
             width: 140px;
