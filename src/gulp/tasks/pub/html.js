@@ -1,8 +1,7 @@
 const html = () => {
    return $.gulp
       .src($.path.html.src.page)
-      .pipe(
-         $.app.fileInclude({
+      .pipe($.app.fileInclude({
             prefix: "@",
             basepath: "./src/",
          })
@@ -16,7 +15,7 @@ const html = () => {
          })
       )
       .pipe($.app.size({ title: "Размер до сжатия:" }))
-      .pipe($.app.htmlmin({ collapseWhitespace: true, removeComments: true }))
+      .pipe($.app.htmlmin({ collapseWhitespace: true, removeComments: true}))
       .on(
          "error",
          $.app.notify.onError({
