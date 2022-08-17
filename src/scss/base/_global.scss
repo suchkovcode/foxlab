@@ -1,9 +1,12 @@
 .page {
-   overflow-x: hidden;
    max-width: 2000px;
    margin: 0 auto;
    &.pop-up {
       overflow: hidden;
+   }
+   overflow-x: hidden;
+   @include lg {
+      overflow: visible;
    }
 }
 .contain {
