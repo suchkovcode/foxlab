@@ -1,5 +1,5 @@
 const nav = document.querySelector(".header__nav");
-const logo = document.querySelector(".header__logo");
+const logo = document.querySelector(".header__logo-img");
 const burger = document.querySelector(".header__toggler");
 const burgerIcon = document.querySelector(".header__toggler-icon");
 const dropdown = document.querySelector(".header__dropdown-toggle");
