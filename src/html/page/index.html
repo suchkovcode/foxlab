@@ -1,346 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
    @loop("html/components/head.html", "../../data/head.json")
-   <body class="page">
-      <div id="luxy" class="p-r">
-         @include('html/components/header.html')
-         <main class="main">
-            <section id="top" class="section-1 contain">
-               <picture class="section-1__picture">
-                  <source srcset="/img/webp/section-1__hero.webp" />
-                  <img class="section-1__img wp-100" src="/img/png/section-1__hero.png" loading="lazy" alt="Img girl" width="340" height="700" />
-               </picture>
-               <div class="section-1__content p-a">
-                  <h1 class="section-1__title t-up">Body aesthetics studio</h1>
-                  <p class="section-1__subtitle t-up">Beauty does not require sacrifice.Beauty requires attention</p>
-                  <a class="btn t-up d-f m-a ai-c jc-c" href="http://arn.su/EDj">Sign up for the procedure</a>
-               </div>
-            </section>
-            <section id="services" class="section-2 contain bg-p">
-               <div class="section-2__grid-container d-g">
-                  <div class="section-2__servises-box d-g">
-                     <a class="section-2__servises-item br p-r d-b bg-s" href="#">
-                        <h2 class="section-2__servises-title t-up p-a">Laser hair removal</h2>
-                        <div class="section-2__servises-btn p-a d-b bg-pink">
-                           <svg class="section-2__servises-btn-line" width="14" height="14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M2.5 0C1.11929 0 0 1.11929 0 2.5V2.5C0 3.88071 1.11929 5 2.5 5H45.5C46.8807 5 48 3.88071 48 2.5V2.5C48 1.11929 46.8807 0 45.5 0H2.5Z" fill="white" />
-                              <path d="M48 2.5C48 1.11929 46.8807 0 45.5 0V0C44.1193 0 43 1.11929 43 2.5V45.5C43 46.8807 44.1193 48 45.5 48V48C46.8807 48 48 46.8807 48 45.5V2.5Z" fill="white" />
-                              <path d="M46.1986 5.97173C47.2149 4.95742 47.2785 3.33147 46.3446 2.24086V2.24086C45.3076 1.03001 43.4611 0.953327 42.3273 2.07403L2.06227 41.8746C0.925251 42.9985 0.919929 44.833 2.05041 45.9635V45.9635C3.17548 47.0885 4.9993 47.0894 6.12548 45.9655L46.1986 5.97173Z" fill="white" />
-                           </svg>
-                        </div>
-                        <picture class="section-2__servises-picture">
-                           <source srcset="/img/webp/section-2__hero-1.webp" type="image/webp" />
-                           <img class="section-2__servises-img br p-a" src="/img/png/section-2__hero-1.png" loading="lazy" alt="Woman" width="300" height="100" />
-                        </picture>
-                     </a>
-                     <a class="section-2__servises-item br p-r d-b bg-s" href="#">
-                        <h2 class="section-2__servises-title t-up p-a">Facial procedures</h2>
-                        <div class="section-2__servises-btn p-a d-b bg-pink">
-                           <svg class="section-2__servises-btn-line" width="14" height="14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M2.5 0C1.11929 0 0 1.11929 0 2.5V2.5C0 3.88071 1.11929 5 2.5 5H45.5C46.8807 5 48 3.88071 48 2.5V2.5C48 1.11929 46.8807 0 45.5 0H2.5Z" fill="white" />
-                              <path d="M48 2.5C48 1.11929 46.8807 0 45.5 0V0C44.1193 0 43 1.11929 43 2.5V45.5C43 46.8807 44.1193 48 45.5 48V48C46.8807 48 48 46.8807 48 45.5V2.5Z" fill="white" />
-                              <path d="M46.1986 5.97173C47.2149 4.95742 47.2785 3.33147 46.3446 2.24086V2.24086C45.3076 1.03001 43.4611 0.953327 42.3273 2.07403L2.06227 41.8746C0.925251 42.9985 0.919929 44.833 2.05041 45.9635V45.9635C3.17548 47.0885 4.9993 47.0894 6.12548 45.9655L46.1986 5.97173Z" fill="white" />
-                           </svg>
-                        </div>
-                        <picture class="section-2__servises-picture">
-                           <source srcset="/img/webp/section-2__hero-2.webp" type="image/webp" />
-                           <img class="section-2__servises-img br p-a" src="/img/png/section-2__hero-2.png" loading="lazy" alt="Woman" width="300" height="100" />
-                        </picture>
-                     </a>
-                     <a class="section-2__servises-item br p-r d-b bg-s" href="#">
-                        <h2 class="section-2__servises-title t-up p-a">Body procedures</h2>
-                        <div class="section-2__servises-btn p-a d-b bg-pink">
-                           <svg class="section-2__servises-btn-line" width="14" height="14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M2.5 0C1.11929 0 0 1.11929 0 2.5V2.5C0 3.88071 1.11929 5 2.5 5H45.5C46.8807 5 48 3.88071 48 2.5V2.5C48 1.11929 46.8807 0 45.5 0H2.5Z" fill="white" />
-                              <path d="M48 2.5C48 1.11929 46.8807 0 45.5 0V0C44.1193 0 43 1.11929 43 2.5V45.5C43 46.8807 44.1193 48 45.5 48V48C46.8807 48 48 46.8807 48 45.5V2.5Z" fill="white" />
-                              <path d="M46.1986 5.97173C47.2149 4.95742 47.2785 3.33147 46.3446 2.24086V2.24086C45.3076 1.03001 43.4611 0.953327 42.3273 2.07403L2.06227 41.8746C0.925251 42.9985 0.919929 44.833 2.05041 45.9635V45.9635C3.17548 47.0885 4.9993 47.0894 6.12548 45.9655L46.1986 5.97173Z" fill="white" />
-                           </svg>
-                        </div>
-                        <picture class="section-2__servises-picture">
-                           <source srcset="/img/webp/section-2__hero-3.webp" type="image/webp" />
-                           <img class="section-2__servises-img br p-a" src="/img/png/section-2__hero-3.png" loading="lazy" alt="Woman" width="300" height="100" />
-                        </picture>
-                     </a>
-                     <a class="section-2__servises-item br p-r d-b bg-s" href="#">
-                        <h2 class="section-2__servises-title t-up p-a">All services</h2>
-                        <div class="section-2__servises-btn p-a d-b bg-pink">
-                           <svg class="section-2__servises-btn-line" width="14" height="14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M2.5 0C1.11929 0 0 1.11929 0 2.5V2.5C0 3.88071 1.11929 5 2.5 5H45.5C46.8807 5 48 3.88071 48 2.5V2.5C48 1.11929 46.8807 0 45.5 0H2.5Z" fill="white" />
-                              <path d="M48 2.5C48 1.11929 46.8807 0 45.5 0V0C44.1193 0 43 1.11929 43 2.5V45.5C43 46.8807 44.1193 48 45.5 48V48C46.8807 48 48 46.8807 48 45.5V2.5Z" fill="white" />
-                              <path d="M46.1986 5.97173C47.2149 4.95742 47.2785 3.33147 46.3446 2.24086V2.24086C45.3076 1.03001 43.4611 0.953327 42.3273 2.07403L2.06227 41.8746C0.925251 42.9985 0.919929 44.833 2.05041 45.9635V45.9635C3.17548 47.0885 4.9993 47.0894 6.12548 45.9655L46.1986 5.97173Z" fill="white" />
-                           </svg>
-                        </div>
-                        <picture class="section-2__servises-picture">
-                           <source srcset="/img/webp/section-2__hero-4.webp" type="image/webp" />
-                           <img class="section-2__servises-img br p-a" src="/img/png/section-2__hero-4.png" loading="lazy" alt="Woman" width="300" height="100" />
-                        </picture>
-                     </a>
-                  </div>
-                  <picture class="section-2__hero-picture br">
-                     <source srcset="/img/webp/section-2__hero.webp" type="image/webp" />
-                     <img class="section-2__hero-img br wp-100" src="/img/png/section-2__hero.png" loading="lazy" alt="Girl pulling a banner for a photo shoot" width="300" height="250" />
-                  </picture>
-               </div>
-            </section>
-            <section class="section-3 contain">
-               <div class="section-3__content d-f fd-c">
-                  <div class="tag">
-                     <p class="tag-text t-up d-ib">About</p>
-                  </div>
-                  <h2 class="section-3__title t-up">
-                     We help you <br />
-                     be confident
-                  </h2>
-                  <p class="section-3__text">Fox Lab is not a business idea for me. The studio was opened from personal desires to achieve the aesthetics of the body.I sorted out and looked for answers in matters of beauty and came to the fact that high -quality equipment and professional masters will be able to help not only me, but also other people.</p>
-                  <p class="section-3__text">We work for the result.Therefore, in the studio, modern equipment that works efficiently, efficiently and safely.Our masters are professionals in their field, for 2 years of the studio, I was convinced of this personally.</p>
-                  <p class="section-3__text">We, in Fox Lab, not only solve the issues of aesthetic cosmetology, laser hair removal and body quality, but also help women and men of Naro-Fominsk to be confident.</p>
-                  <p class="section-3__text t-up">
-                     Victoria Lapina, <br />
-                     <span class="t-lw">director and head of Fox Lab studio</span>
-                  </p>
-               </div>
-               <div class="section-3__img-box p-r">
-                  <picture class="section-3__picture-1">
-                     <source srcset="/img/webp/section-3__hero-1.webp" />
-                     <img class="section-3__img-1 p-a" src="/img/png/section-3__hero-1.png" loading="lazy" alt="Founder foto 1" width="250" height="250" />
-                  </picture>
-                  <picture class="section-3__picture-2">
-                     <source srcset="/img/webp/section-3__hero-2.webp" />
-                     <img class="section-3__img-2 p-a" src="/img/png/section-3__hero-2.png" loading="lazy" alt="Founder foto 2" width="160" height="160" />
-                  </picture>
-               </div>
-            </section>
-            <section class="section-4 contain">
-               <div class="section-4__marquee section-4__marquee-1">
-                  <h2 class="section-4__marquee-text t-up">fox.lab</h2>
-                  <span class="section-4__marquee-elipse"></span>
-                  <span class="section-4__marquee-text t-up">fox.lab</span>
-                  <span class="section-4__marquee-elipse"></span>
-                  <span class="section-4__marquee-text t-up">fox.lab</span>
-                  <span class="section-4__marquee-elipse"></span>
-                  <span class="section-4__marquee-text t-up">fox.lab</span>
-                  <span class="section-4__marquee-elipse"></span>
-                  <span class="section-4__marquee-text t-up">fox.lab</span>
-                  <span class="section-4__marquee-elipse"></span>
-                  <span class="section-4__marquee-text t-up">fox.lab</span>
-                  <span class="section-4__marquee-elipse"></span>
-                  <span class="section-4__marquee-text t-up">fox.lab</span>
-                  <span class="section-4__marquee-elipse"></span>
-               </div>
-               <div class="section-4__img-box d-g">
-                  <picture class="section-4__picture-1">
-                     <source srcset="/img/webp/section-4__hero-1.webp" type="image/webp" />
-                     <img class="section-4__img-1 br wp-100 h-a" src="/img/png/section-4__hero-1.png" loading="lazy" alt="Model photo 1" width="155" height="220" />
-                  </picture>
-                  <picture class="section-4__picture-2">
-                     <source srcset="/img/webp/section-4__hero-2.webp" type="image/webp" />
-                     <img class="section-4__img-2 br wp-100 h-a" src="/img/png/section-4__hero-2.png" loading="lazy" alt="Model photo 1" width="155" height="220" />
-                  </picture>
-                  <picture class="section-4__picture-3">
-                     <source srcset="/img/webp/section-4__hero-3.webp" type="image/webp" />
-                     <img class="section-4__img-3 br wp-100" src="/img/png/section-4__hero-3.png" loading="lazy" alt="Model photo 3" width="300" height="300" />
-                  </picture>
-                  <picture class="section-4__picture-4">
-                     <source srcset="/img/webp/section-4__hero-4.webp" type="image/webp" />
-                     <img class="section-4__img-4 br wp-100 h-a" src="/img/png/section-4__hero-4.png" loading="lazy" alt="Model photo 4" width="155" height="220" />
-                  </picture>
-                  <picture class="section-4__picture-5">
-                     <source srcset="/img/webp/section-4__hero-5.webp" type="image/webp" />
-                     <img class="section-4__img-5 br wp-100 h-a" src="/img/png/section-4__hero-5.png" loading="lazy" alt="Model photo 5" width="155" height="220" />
-                  </picture>
-               </div>
-               <div class="section-4__marquee section-4__marquee-2">
-                  <span class="section-4__marquee-elipse"></span>
-                  <span class="section-4__marquee-text t-up">fox.lab</span>
-                  <span class="section-4__marquee-elipse"></span>
-                  <span class="section-4__marquee-text t-up">fox.lab</span>
-                  <span class="section-4__marquee-elipse"></span>
-                  <span class="section-4__marquee-text t-up">fox.lab</span>
-                  <span class="section-4__marquee-elipse"></span>
-                  <span class="section-4__marquee-text t-up">fox.lab</span>
-                  <span class="section-4__marquee-elipse"></span>
-                  <span class="section-4__marquee-text t-up">fox.lab</span>
-                  <span class="section-4__marquee-elipse"></span>
-                  <span class="section-4__marquee-text t-up">fox.lab</span>
-                  <span class="section-4__marquee-elipse"></span>
-                  <span class="section-4__marquee-text t-up">fox.lab</span>
-               </div>
-            </section>
-            <section id="actions" class="section-5 contain">
-               <div class="section-5__header">
-                  <div class="tag d-ib">
-                     <p class="tag-text t-up d-ib">ACTIONS</p>
-                  </div>
-                  <h2 class="section-5__title t-up">
-                     We are acting <br />
-                     SPECIAL OFFERS
-                  </h2>
-               </div>
-               <div class="section-5__offer d-g gap">
-                  <div class="section-5__offer-item section-5__offer-1 d-f fd-c br">
-                     <div class="section-5__offer-btn d-f jc-c ai-c">
-                        <p class="section-5__offer-text t-up">01</p>
+   <body class="page p-r">
+      @include('html/components/header.html')
+      <main class="main">
+         <section id="top" class="section-1 contain">
+            <picture class="section-1__picture">
+               <source srcset="/img/webp/section-1__hero.webp" />
+               <img class="section-1__img wp-100" src="/img/png/section-1__hero.png" loading="lazy" alt="Img girl" width="340" height="700" />
+            </picture>
+            <div class="section-1__content p-a">
+               <h1 class="section-1__title t-up">Body aesthetics studio</h1>
+               <p class="section-1__subtitle t-up">Beauty does not require sacrifice.Beauty requires attention</p>
+               <a class="btn t-up d-f m-a ai-c jc-c" href="http://arn.su/EDj">Sign up for the procedure</a>
+            </div>
+         </section>
+         <section id="services" class="section-2 contain bg-p">
+            <div class="section-2__grid-container d-g">
+               <div class="section-2__servises-box d-g">
+                  <a class="section-2__servises-item br p-r d-b bg-s" href="#">
+                     <h2 class="section-2__servises-title t-up p-a">Laser hair removal</h2>
+                     <div class="section-2__servises-btn p-a d-b bg-pink">
+                        <svg class="section-2__servises-btn-line" width="14" height="14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M2.5 0C1.11929 0 0 1.11929 0 2.5V2.5C0 3.88071 1.11929 5 2.5 5H45.5C46.8807 5 48 3.88071 48 2.5V2.5C48 1.11929 46.8807 0 45.5 0H2.5Z" fill="white" />
+                           <path d="M48 2.5C48 1.11929 46.8807 0 45.5 0V0C44.1193 0 43 1.11929 43 2.5V45.5C43 46.8807 44.1193 48 45.5 48V48C46.8807 48 48 46.8807 48 45.5V2.5Z" fill="white" />
+                           <path d="M46.1986 5.97173C47.2149 4.95742 47.2785 3.33147 46.3446 2.24086V2.24086C45.3076 1.03001 43.4611 0.953327 42.3273 2.07403L2.06227 41.8746C0.925251 42.9985 0.919929 44.833 2.05041 45.9635V45.9635C3.17548 47.0885 4.9993 47.0894 6.12548 45.9655L46.1986 5.97173Z" fill="white" />
+                        </svg>
                      </div>
-                     <h3 class="section-5__offer-title t-up">For those in our studio for the first time</h3>
-                     <ul class="section-5__offer-bullet d-f fd-c">
-                        <li class="section-5__offer-bullet-item d-f">Free laser hair removal of the axillary cavity or any face zone</li>
-                        <li class="section-5__offer-bullet-item d-f">
-                           <p>The first carbon peeling procedure at a price of <strong>$50</strong></p>
-                        </li>
-                        <li class="section-5__offer-bullet-item d-f">
-                           <p>The first Velashape procedure <strong>$100</strong></p>
-                        </li>
-                     </ul>
-                  </div>
-                  <picture class="section-5__picture br">
-                     <source srcset="/img/webp/section-5__hero.webp" type="image/webp" />
-                     <img class="section-5__img br" src="/img/png/section-5__hero.png" loading="lazy" alt="Girl 1" width="300" height="200" />
-                  </picture>
-                  <div class="section-5__offer-item section-5__offer-2 d-f fd-c br">
-                     <div class="section-5__offer-btn d-f jc-c ai-c">
-                        <p class="section-5__offer-text t-up">02</p>
-                     </div>
-                     <h3 class="section-5__offer-title t-up">-10% on birthday</h3>
-                     <ul class="section-5__offer-bullet d-f fd-c">
-                        <li class="section-5__offer-bullet-item d-f">The discount is valid for all the services of the studio on the birthday, 3 days before and 3 days after</li>
-                     </ul>
-                  </div>
-                  <div class="section-5__offer-item section-5__offer-3 d-f fd-c br">
-                     <div class="section-5__offer-btn d-f jc-c ai-c">
-                        <p class="section-5__offer-text t-up">03</p>
-                     </div>
-                     <h3 class="section-5__offer-title t-up">Loyalty system</h3>
-                     <ul class="section-5__offer-bullet d-f fd-c">
-                        <li class="section-5__offer-bullet-item d-f">Regular customers of our studio are operating cards with an increasing discount</li>
-                     </ul>
-                  </div>
-                  <div class="section-5__offer-item section-5__offer-4 d-f fd-c br">
-                     <div class="section-5__offer-btn d-f jc-c ai-c">
-                        <p class="section-5__offer-text t-up">04</p>
-                     </div>
-                     <h3 class="section-5__offer-title t-up">-10% for a new subscription</h3>
-                     <ul class="section-5__offer-bullet d-f fd-c">
-                        <li class="section-5__offer-bullet-item d-f">When buying an old subscription on the last procedure</li>
-                     </ul>
-                  </div>
-               </div>
-            </section>
-            <section id="certificate" class="section-6 contain">
-               <picture class="section-6__picture">
-                  <source srcset="/img/webp/section-6__hero.webp" type="image/webp" />
-                  <img class="section-6__hero" src="/img/png/section-6__hero.png" alt="2 woman" loading="lazy" width="340" height="350" />
-               </picture>
-               <div class="section-6__content p-a d-f fd-c">
-                  <h2 class="section-6__title t-up">GIFT CERTIFICATES</h2>
-                  <p class="section-6__subtitle">For any amount or plastic cards with a face value</p>
-                  <p class="section-6__cta t-up">100, 200 and 500 dollars</p>
-                  <button id="popUpBtn" class="btn t-up d-f m-a ai-c jc-c">Select a certificate</button>
-               </div>
-            </section>
-            <section id="specialists" class="section-7 contain bg-s">
-               <div class="section-7__header">
-                  <div class="tag d-ib">
-                     <p class="tag-text t-up d-ib">Specialists</p>
-                  </div>
-                  <h2 class="section-7__title t-up">
-                     In our studio they <br />
-                     work QUALIFIED SPECIALISTS
-                  </h2>
-               </div>
-               <div class="section-7__card-box contain d-g">
-                  <div class="section-7__card-1 p-r">
-                     <picture class="section-7__picture">
-                        <source srcset="/img/png/section-7__hero-1.png" type="image/webp" />
-                        <img class="section-7__img br wp-100" src="/img/png/section-7__hero-1.png" loading="lazy" alt="spcialist-1" width="300" height="450" />
+                     <picture class="section-2__servises-picture">
+                        <source srcset="/img/webp/section-2__hero-1.webp" type="image/webp" />
+                        <img class="section-2__servises-img br p-a" src="/img/png/section-2__hero-1.png" loading="lazy" alt="Woman" width="300" height="100" />
                      </picture>
-                     <div class="section-7__card-info p-a bg-p br">
-                        <span class="section-7__card-tag t-up br d-ib">Cosmetologist - aesthetist</span>
-                        <h3 class="section-7__card-title t-up">Vera Filkina</h3>
-                        <p class="section-7__card-subtitle">Qualified specialist in hardware cosmetology.He has been working in the studio since the foundation.</p>
+                  </a>
+                  <a class="section-2__servises-item br p-r d-b bg-s" href="#">
+                     <h2 class="section-2__servises-title t-up p-a">Facial procedures</h2>
+                     <div class="section-2__servises-btn p-a d-b bg-pink">
+                        <svg class="section-2__servises-btn-line" width="14" height="14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M2.5 0C1.11929 0 0 1.11929 0 2.5V2.5C0 3.88071 1.11929 5 2.5 5H45.5C46.8807 5 48 3.88071 48 2.5V2.5C48 1.11929 46.8807 0 45.5 0H2.5Z" fill="white" />
+                           <path d="M48 2.5C48 1.11929 46.8807 0 45.5 0V0C44.1193 0 43 1.11929 43 2.5V45.5C43 46.8807 44.1193 48 45.5 48V48C46.8807 48 48 46.8807 48 45.5V2.5Z" fill="white" />
+                           <path d="M46.1986 5.97173C47.2149 4.95742 47.2785 3.33147 46.3446 2.24086V2.24086C45.3076 1.03001 43.4611 0.953327 42.3273 2.07403L2.06227 41.8746C0.925251 42.9985 0.919929 44.833 2.05041 45.9635V45.9635C3.17548 47.0885 4.9993 47.0894 6.12548 45.9655L46.1986 5.97173Z" fill="white" />
+                        </svg>
                      </div>
-                  </div>
-                  <div class="section-7__card-2 p-r">
-                     <picture class="section-7__picture">
-                        <source srcset="/img/webp/section-7__hero-2.webp" type="image/webp" />
-                        <img class="section-7__img br wp-100" src="/img/png/section-7__hero-2.png" loading="lazy" alt="spcialist-2" width="300" height="450" />
+                     <picture class="section-2__servises-picture">
+                        <source srcset="/img/webp/section-2__hero-2.webp" type="image/webp" />
+                        <img class="section-2__servises-img br p-a" src="/img/png/section-2__hero-2.png" loading="lazy" alt="Woman" width="300" height="100" />
                      </picture>
-                     <div class="section-7__card-info p-a bg-p br">
-                        <span class="section-7__card-tag t-up br d-ib">BEAUTICIAN</span>
-                        <h3 class="section-7__card-title t-up">Maria Panina</h3>
-                        <p class="section-7__card-subtitle">The experience of a medical worker since 1993, a cosmetologist since 2015.Qualified specialist in hardware and care cosmetology of the face and body.He has been working in the studio since 2021.Our studio has qualified experts experts</p>
+                  </a>
+                  <a class="section-2__servises-item br p-r d-b bg-s" href="#">
+                     <h2 class="section-2__servises-title t-up p-a">Body procedures</h2>
+                     <div class="section-2__servises-btn p-a d-b bg-pink">
+                        <svg class="section-2__servises-btn-line" width="14" height="14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M2.5 0C1.11929 0 0 1.11929 0 2.5V2.5C0 3.88071 1.11929 5 2.5 5H45.5C46.8807 5 48 3.88071 48 2.5V2.5C48 1.11929 46.8807 0 45.5 0H2.5Z" fill="white" />
+                           <path d="M48 2.5C48 1.11929 46.8807 0 45.5 0V0C44.1193 0 43 1.11929 43 2.5V45.5C43 46.8807 44.1193 48 45.5 48V48C46.8807 48 48 46.8807 48 45.5V2.5Z" fill="white" />
+                           <path d="M46.1986 5.97173C47.2149 4.95742 47.2785 3.33147 46.3446 2.24086V2.24086C45.3076 1.03001 43.4611 0.953327 42.3273 2.07403L2.06227 41.8746C0.925251 42.9985 0.919929 44.833 2.05041 45.9635V45.9635C3.17548 47.0885 4.9993 47.0894 6.12548 45.9655L46.1986 5.97173Z" fill="white" />
+                        </svg>
                      </div>
-                  </div>
-                  <div class="section-7__card-3">
-                     <video class="section-7__video br wp-100 lazy-video" width="300" height="450" autoplay loop muted>
-                        <source data-src="/video/section-7__video.mp4" type="video/mp4" />
-                     </video>
-                  </div>
+                     <picture class="section-2__servises-picture">
+                        <source srcset="/img/webp/section-2__hero-3.webp" type="image/webp" />
+                        <img class="section-2__servises-img br p-a" src="/img/png/section-2__hero-3.png" loading="lazy" alt="Woman" width="300" height="100" />
+                     </picture>
+                  </a>
+                  <a class="section-2__servises-item br p-r d-b bg-s" href="#">
+                     <h2 class="section-2__servises-title t-up p-a">All services</h2>
+                     <div class="section-2__servises-btn p-a d-b bg-pink">
+                        <svg class="section-2__servises-btn-line" width="14" height="14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M2.5 0C1.11929 0 0 1.11929 0 2.5V2.5C0 3.88071 1.11929 5 2.5 5H45.5C46.8807 5 48 3.88071 48 2.5V2.5C48 1.11929 46.8807 0 45.5 0H2.5Z" fill="white" />
+                           <path d="M48 2.5C48 1.11929 46.8807 0 45.5 0V0C44.1193 0 43 1.11929 43 2.5V45.5C43 46.8807 44.1193 48 45.5 48V48C46.8807 48 48 46.8807 48 45.5V2.5Z" fill="white" />
+                           <path d="M46.1986 5.97173C47.2149 4.95742 47.2785 3.33147 46.3446 2.24086V2.24086C45.3076 1.03001 43.4611 0.953327 42.3273 2.07403L2.06227 41.8746C0.925251 42.9985 0.919929 44.833 2.05041 45.9635V45.9635C3.17548 47.0885 4.9993 47.0894 6.12548 45.9655L46.1986 5.97173Z" fill="white" />
+                        </svg>
+                     </div>
+                     <picture class="section-2__servises-picture">
+                        <source srcset="/img/webp/section-2__hero-4.webp" type="image/webp" />
+                        <img class="section-2__servises-img br p-a" src="/img/png/section-2__hero-4.png" loading="lazy" alt="Woman" width="300" height="100" />
+                     </picture>
+                  </a>
                </div>
-            </section>
-            <section id="contact" class="section-8 contain bg-p">
-               <div class="section-8__header">
-                  <div class="tag d-ib">
-                     <p class="tag-text t-up d-ib">CONTACTS</p>
-                  </div>
-                  <h2 class="section-8__title t-up">We are waiting for you in our studio</h2>
+               <picture class="section-2__hero-picture br">
+                  <source srcset="/img/webp/section-2__hero.webp" type="image/webp" />
+                  <img class="section-2__hero-img br wp-100" src="/img/png/section-2__hero.png" loading="lazy" alt="Girl pulling a banner for a photo shoot" width="300" height="250" />
+               </picture>
+            </div>
+         </section>
+         <section class="section-3 contain">
+            <div class="section-3__content d-f fd-c">
+               <div class="tag">
+                  <p class="tag-text t-up d-ib">About</p>
                </div>
-               <div class="section-8__grid-container d-g gap">
-                  <div class="section-8__card section-8__card-1 bg-s br">
-                     <h3 class="section-8__card-title t-up">OUR ADDRESS</h3>
-                     <ul class="section-8__card-bullet d-f fd-c">
-                        <li class="section-8__card-bullet-item d-f"><address class="section-8__card-adress">city of Naro-Fominsk, Tureka Park, 26</address></li>
-                        <li class="section-8__card-bullet-item d-f">daily with 10: 00-21: 00</li>
-                     </ul>
+               <h2 class="section-3__title t-up">
+                  We help you <br />
+                  be confident
+               </h2>
+               <p class="section-3__text">Fox Lab is not a business idea for me. The studio was opened from personal desires to achieve the aesthetics of the body.I sorted out and looked for answers in matters of beauty and came to the fact that high -quality equipment and professional masters will be able to help not only me, but also other people.</p>
+               <p class="section-3__text">We work for the result.Therefore, in the studio, modern equipment that works efficiently, efficiently and safely.Our masters are professionals in their field, for 2 years of the studio, I was convinced of this personally.</p>
+               <p class="section-3__text">We, in Fox Lab, not only solve the issues of aesthetic cosmetology, laser hair removal and body quality, but also help women and men of Naro-Fominsk to be confident.</p>
+               <p class="section-3__text t-up">
+                  Victoria Lapina, <br />
+                  <span class="t-lw">director and head of Fox Lab studio</span>
+               </p>
+            </div>
+            <div class="section-3__img-box p-r">
+               <picture class="section-3__picture-1">
+                  <source srcset="/img/webp/section-3__hero-1.webp" />
+                  <img class="section-3__img-1 p-a" src="/img/png/section-3__hero-1.png" loading="lazy" alt="Founder foto 1" width="250" height="250" />
+               </picture>
+               <picture class="section-3__picture-2">
+                  <source srcset="/img/webp/section-3__hero-2.webp" />
+                  <img class="section-3__img-2 p-a" src="/img/png/section-3__hero-2.png" loading="lazy" alt="Founder foto 2" width="160" height="160" />
+               </picture>
+            </div>
+         </section>
+         <section class="section-4 contain">
+            <div class="section-4__marquee section-4__marquee-1">
+               <h2 class="section-4__marquee-text t-up">fox.lab</h2>
+               <span class="section-4__marquee-elipse"></span>
+               <span class="section-4__marquee-text t-up">fox.lab</span>
+               <span class="section-4__marquee-elipse"></span>
+               <span class="section-4__marquee-text t-up">fox.lab</span>
+               <span class="section-4__marquee-elipse"></span>
+               <span class="section-4__marquee-text t-up">fox.lab</span>
+               <span class="section-4__marquee-elipse"></span>
+               <span class="section-4__marquee-text t-up">fox.lab</span>
+               <span class="section-4__marquee-elipse"></span>
+               <span class="section-4__marquee-text t-up">fox.lab</span>
+               <span class="section-4__marquee-elipse"></span>
+               <span class="section-4__marquee-text t-up">fox.lab</span>
+               <span class="section-4__marquee-elipse"></span>
+            </div>
+            <div class="section-4__img-box d-g">
+               <picture class="section-4__picture-1">
+                  <source srcset="/img/webp/section-4__hero-1.webp" type="image/webp" />
+                  <img class="section-4__img-1 br wp-100 h-a" src="/img/png/section-4__hero-1.png" loading="lazy" alt="Model photo 1" width="155" height="220" />
+               </picture>
+               <picture class="section-4__picture-2">
+                  <source srcset="/img/webp/section-4__hero-2.webp" type="image/webp" />
+                  <img class="section-4__img-2 br wp-100 h-a" src="/img/png/section-4__hero-2.png" loading="lazy" alt="Model photo 1" width="155" height="220" />
+               </picture>
+               <picture class="section-4__picture-3">
+                  <source srcset="/img/webp/section-4__hero-3.webp" type="image/webp" />
+                  <img class="section-4__img-3 br wp-100" src="/img/png/section-4__hero-3.png" loading="lazy" alt="Model photo 3" width="300" height="300" />
+               </picture>
+               <picture class="section-4__picture-4">
+                  <source srcset="/img/webp/section-4__hero-4.webp" type="image/webp" />
+                  <img class="section-4__img-4 br wp-100 h-a" src="/img/png/section-4__hero-4.png" loading="lazy" alt="Model photo 4" width="155" height="220" />
+               </picture>
+               <picture class="section-4__picture-5">
+                  <source srcset="/img/webp/section-4__hero-5.webp" type="image/webp" />
+                  <img class="section-4__img-5 br wp-100 h-a" src="/img/png/section-4__hero-5.png" loading="lazy" alt="Model photo 5" width="155" height="220" />
+               </picture>
+            </div>
+            <div class="section-4__marquee section-4__marquee-2">
+               <span class="section-4__marquee-elipse"></span>
+               <span class="section-4__marquee-text t-up">fox.lab</span>
+               <span class="section-4__marquee-elipse"></span>
+               <span class="section-4__marquee-text t-up">fox.lab</span>
+               <span class="section-4__marquee-elipse"></span>
+               <span class="section-4__marquee-text t-up">fox.lab</span>
+               <span class="section-4__marquee-elipse"></span>
+               <span class="section-4__marquee-text t-up">fox.lab</span>
+               <span class="section-4__marquee-elipse"></span>
+               <span class="section-4__marquee-text t-up">fox.lab</span>
+               <span class="section-4__marquee-elipse"></span>
+               <span class="section-4__marquee-text t-up">fox.lab</span>
+               <span class="section-4__marquee-elipse"></span>
+               <span class="section-4__marquee-text t-up">fox.lab</span>
+            </div>
+         </section>
+         <section id="actions" class="section-5 contain">
+            <div class="section-5__header">
+               <div class="tag d-ib">
+                  <p class="tag-text t-up d-ib">ACTIONS</p>
+               </div>
+               <h2 class="section-5__title t-up">
+                  We are acting <br />
+                  SPECIAL OFFERS
+               </h2>
+            </div>
+            <div class="section-5__offer d-g gap">
+               <div class="section-5__offer-item section-5__offer-1 d-f fd-c br">
+                  <div class="section-5__offer-btn d-f jc-c ai-c">
+                     <p class="section-5__offer-text t-up">01</p>
                   </div>
-                  <div class="section-8__card section-8__card-2 bg-s br">
-                     <h3 class="section-8__card-title t-up">CALL US</h3>
-                     <ul class="section-8__card-bullet d-f fd-c">
-                        <li class="section-8__card-bullet-item d-f"><a class="section-8__card-link" href="tel:79912435063">+1-991-243-50-63 Studio</a></li>
-                        <li class="section-8__card-bullet-item d-f"><a class="section-8__card-link" href="tel:79067030075">+1-906-703-00-75 Victoria, leader</a></li>
-                     </ul>
+                  <h3 class="section-5__offer-title t-up">For those in our studio for the first time</h3>
+                  <ul class="section-5__offer-bullet d-f fd-c">
+                     <li class="section-5__offer-bullet-item d-f">Free laser hair removal of the axillary cavity or any face zone</li>
+                     <li class="section-5__offer-bullet-item d-f">
+                        <p>The first carbon peeling procedure at a price of <strong>$50</strong></p>
+                     </li>
+                     <li class="section-5__offer-bullet-item d-f">
+                        <p>The first Velashape procedure <strong>$100</strong></p>
+                     </li>
+                  </ul>
+               </div>
+               <picture class="section-5__picture br">
+                  <source srcset="/img/webp/section-5__hero.webp" type="image/webp" />
+                  <img class="section-5__img br" src="/img/png/section-5__hero.png" loading="lazy" alt="Girl 1" width="300" height="200" />
+               </picture>
+               <div class="section-5__offer-item section-5__offer-2 d-f fd-c br">
+                  <div class="section-5__offer-btn d-f jc-c ai-c">
+                     <p class="section-5__offer-text t-up">02</p>
                   </div>
-                  <div class="section-8__social-box d-f fd-c">
-                     <a class="section-8__social-item d-f ai-c p-r wp-100" href="https://t.me/foxlabnf">
-                        <span class="section-8__social-link t-up d-ib">Telegram</span>
-                        <span class="section-8__social-btn p-a d-b bg-pink">
-                           <svg class="section-8__social-btn-line" width="14" height="14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M2.5 0C1.11929 0 0 1.11929 0 2.5V2.5C0 3.88071 1.11929 5 2.5 5H45.5C46.8807 5 48 3.88071 48 2.5V2.5C48 1.11929 46.8807 0 45.5 0H2.5Z" fill="white" />
-                              <path d="M48 2.5C48 1.11929 46.8807 0 45.5 0V0C44.1193 0 43 1.11929 43 2.5V45.5C43 46.8807 44.1193 48 45.5 48V48C46.8807 48 48 46.8807 48 45.5V2.5Z" fill="white" />
-                              <path d="M46.1986 5.97173C47.2149 4.95742 47.2785 3.33147 46.3446 2.24086V2.24086C45.3076 1.03001 43.4611 0.953327 42.3273 2.07403L2.06227 41.8746C0.925251 42.9985 0.919929 44.833 2.05041 45.9635V45.9635C3.17548 47.0885 4.9993 47.0894 6.12548 45.9655L46.1986 5.97173Z" fill="white" />
-                           </svg>
-                        </span>
-                     </a>
-                     <a class="section-8__social-item d-f ai-c p-r wp-100" href="https://instagram.com/fox.lab.nf?igshid=YmMyMTA2M2Y=">
-                        <span class="section-8__social-link t-up d-ib">Instagram</span>
-                        <span class="section-8__social-btn p-a d-b bg-pink">
-                           <svg class="section-8__social-btn-line" width="14" height="14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M2.5 0C1.11929 0 0 1.11929 0 2.5V2.5C0 3.88071 1.11929 5 2.5 5H45.5C46.8807 5 48 3.88071 48 2.5V2.5C48 1.11929 46.8807 0 45.5 0H2.5Z" fill="white" />
-                              <path d="M48 2.5C48 1.11929 46.8807 0 45.5 0V0C44.1193 0 43 1.11929 43 2.5V45.5C43 46.8807 44.1193 48 45.5 48V48C46.8807 48 48 46.8807 48 45.5V2.5Z" fill="white" />
-                              <path d="M46.1986 5.97173C47.2149 4.95742 47.2785 3.33147 46.3446 2.24086V2.24086C45.3076 1.03001 43.4611 0.953327 42.3273 2.07403L2.06227 41.8746C0.925251 42.9985 0.919929 44.833 2.05041 45.9635V45.9635C3.17548 47.0885 4.9993 47.0894 6.12548 45.9655L46.1986 5.97173Z" fill="white" />
-                           </svg>
-                        </span>
-                     </a>
-                     <a class="section-8__social-item d-f ai-c p-r wp-100" href="https://vk.com/foxlabnf">
-                        <span class="section-8__social-link t-up d-ib">Vkontakte</span>
-                        <span class="section-8__social-btn p-a d-b bg-pink">
-                           <svg class="section-8__social-btn-line" width="14" height="14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M2.5 0C1.11929 0 0 1.11929 0 2.5V2.5C0 3.88071 1.11929 5 2.5 5H45.5C46.8807 5 48 3.88071 48 2.5V2.5C48 1.11929 46.8807 0 45.5 0H2.5Z" fill="white" />
-                              <path d="M48 2.5C48 1.11929 46.8807 0 45.5 0V0C44.1193 0 43 1.11929 43 2.5V45.5C43 46.8807 44.1193 48 45.5 48V48C46.8807 48 48 46.8807 48 45.5V2.5Z" fill="white" />
-                              <path d="M46.1986 5.97173C47.2149 4.95742 47.2785 3.33147 46.3446 2.24086V2.24086C45.3076 1.03001 43.4611 0.953327 42.3273 2.07403L2.06227 41.8746C0.925251 42.9985 0.919929 44.833 2.05041 45.9635V45.9635C3.17548 47.0885 4.9993 47.0894 6.12548 45.9655L46.1986 5.97173Z" fill="white" />
-                           </svg>
-                        </span>
-                     </a>
-                     <a class="section-8__btn t-up d-f m-a ai-c jc-c bg-pink wp-100 t-up" href="http://arn.su/EDj">Sign up for the procedure</a>
+                  <h3 class="section-5__offer-title t-up">-10% on birthday</h3>
+                  <ul class="section-5__offer-bullet d-f fd-c">
+                     <li class="section-5__offer-bullet-item d-f">The discount is valid for all the services of the studio on the birthday, 3 days before and 3 days after</li>
+                  </ul>
+               </div>
+               <div class="section-5__offer-item section-5__offer-3 d-f fd-c br">
+                  <div class="section-5__offer-btn d-f jc-c ai-c">
+                     <p class="section-5__offer-text t-up">03</p>
                   </div>
-                  <picture class="section-8__picture">
-                     <source srcset="/img/webp/section-8__img.webp" type="image/webp" />
-                     <img class="section-8__img br wp-100" src="/img/png/section-8__img.png" alt="Img procedure" loading="lazy" width="300" height="370" />
+                  <h3 class="section-5__offer-title t-up">Loyalty system</h3>
+                  <ul class="section-5__offer-bullet d-f fd-c">
+                     <li class="section-5__offer-bullet-item d-f">Regular customers of our studio are operating cards with an increasing discount</li>
+                  </ul>
+               </div>
+               <div class="section-5__offer-item section-5__offer-4 d-f fd-c br">
+                  <div class="section-5__offer-btn d-f jc-c ai-c">
+                     <p class="section-5__offer-text t-up">04</p>
+                  </div>
+                  <h3 class="section-5__offer-title t-up">-10% for a new subscription</h3>
+                  <ul class="section-5__offer-bullet d-f fd-c">
+                     <li class="section-5__offer-bullet-item d-f">When buying an old subscription on the last procedure</li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section id="certificate" class="section-6 contain">
+            <picture class="section-6__picture">
+               <source srcset="/img/webp/section-6__hero.webp" type="image/webp" />
+               <img class="section-6__hero" src="/img/png/section-6__hero.png" alt="2 woman" loading="lazy" width="340" height="350" />
+            </picture>
+            <div class="section-6__content p-a d-f fd-c">
+               <h2 class="section-6__title t-up">GIFT CERTIFICATES</h2>
+               <p class="section-6__subtitle">For any amount or plastic cards with a face value</p>
+               <p class="section-6__cta t-up">100, 200 and 500 dollars</p>
+               <button id="popUpBtn" class="btn t-up d-f m-a ai-c jc-c">Select a certificate</button>
+            </div>
+         </section>
+         <section id="specialists" class="section-7 contain bg-s">
+            <div class="section-7__header">
+               <div class="tag d-ib">
+                  <p class="tag-text t-up d-ib">Specialists</p>
+               </div>
+               <h2 class="section-7__title t-up">
+                  In our studio they <br />
+                  work QUALIFIED SPECIALISTS
+               </h2>
+            </div>
+            <div class="section-7__card-box contain d-g">
+               <div class="section-7__card-1 p-r">
+                  <picture class="section-7__picture">
+                     <source srcset="/img/png/section-7__hero-1.png" type="image/webp" />
+                     <img class="section-7__img br wp-100" src="/img/png/section-7__hero-1.png" loading="lazy" alt="spcialist-1" width="300" height="450" />
                   </picture>
+                  <div class="section-7__card-info p-a bg-p br">
+                     <span class="section-7__card-tag t-up br d-ib">Cosmetologist - aesthetist</span>
+                     <h3 class="section-7__card-title t-up">Vera Filkina</h3>
+                     <p class="section-7__card-subtitle">Qualified specialist in hardware cosmetology.He has been working in the studio since the foundation.</p>
+                  </div>
                </div>
-            </section>
-            @include('html/components/modal.html')
-         </main>
-         @include('html/components/footer.html')
-      </div>
+               <div class="section-7__card-2 p-r">
+                  <picture class="section-7__picture">
+                     <source srcset="/img/webp/section-7__hero-2.webp" type="image/webp" />
+                     <img class="section-7__img br wp-100" src="/img/png/section-7__hero-2.png" loading="lazy" alt="spcialist-2" width="300" height="450" />
+                  </picture>
+                  <div class="section-7__card-info p-a bg-p br">
+                     <span class="section-7__card-tag t-up br d-ib">BEAUTICIAN</span>
+                     <h3 class="section-7__card-title t-up">Maria Panina</h3>
+                     <p class="section-7__card-subtitle">The experience of a medical worker since 1993, a cosmetologist since 2015.Qualified specialist in hardware and care cosmetology of the face and body.He has been working in the studio since 2021.Our studio has qualified experts experts</p>
+                  </div>
+               </div>
+               <div class="section-7__card-3">
+                  <video class="section-7__video br wp-100 lazy-video" width="300" height="450" autoplay loop muted>
+                     <source data-src="/video/section-7__video.mp4" type="video/mp4" />
+                  </video>
+               </div>
+            </div>
+         </section>
+         <section id="contact" class="section-8 contain bg-p">
+            <div class="section-8__header">
+               <div class="tag d-ib">
+                  <p class="tag-text t-up d-ib">CONTACTS</p>
+               </div>
+               <h2 class="section-8__title t-up">We are waiting for you in our studio</h2>
+            </div>
+            <div class="section-8__grid-container d-g gap">
+               <div class="section-8__card section-8__card-1 bg-s br">
+                  <h3 class="section-8__card-title t-up">OUR ADDRESS</h3>
+                  <ul class="section-8__card-bullet d-f fd-c">
+                     <li class="section-8__card-bullet-item d-f"><address class="section-8__card-adress">city of Naro-Fominsk, Tureka Park, 26</address></li>
+                     <li class="section-8__card-bullet-item d-f">daily with 10: 00-21: 00</li>
+                  </ul>
+               </div>
+               <div class="section-8__card section-8__card-2 bg-s br">
+                  <h3 class="section-8__card-title t-up">CALL US</h3>
+                  <ul class="section-8__card-bullet d-f fd-c">
+                     <li class="section-8__card-bullet-item d-f"><a class="section-8__card-link" href="tel:79912435063">+1-991-243-50-63 Studio</a></li>
+                     <li class="section-8__card-bullet-item d-f"><a class="section-8__card-link" href="tel:79067030075">+1-906-703-00-75 Victoria, leader</a></li>
+                  </ul>
+               </div>
+               <div class="section-8__social-box d-f fd-c">
+                  <a class="section-8__social-item d-f ai-c p-r wp-100" href="https://t.me/foxlabnf">
+                     <span class="section-8__social-link t-up d-ib">Telegram</span>
+                     <span class="section-8__social-btn p-a d-b bg-pink">
+                        <svg class="section-8__social-btn-line" width="14" height="14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M2.5 0C1.11929 0 0 1.11929 0 2.5V2.5C0 3.88071 1.11929 5 2.5 5H45.5C46.8807 5 48 3.88071 48 2.5V2.5C48 1.11929 46.8807 0 45.5 0H2.5Z" fill="white" />
+                           <path d="M48 2.5C48 1.11929 46.8807 0 45.5 0V0C44.1193 0 43 1.11929 43 2.5V45.5C43 46.8807 44.1193 48 45.5 48V48C46.8807 48 48 46.8807 48 45.5V2.5Z" fill="white" />
+                           <path d="M46.1986 5.97173C47.2149 4.95742 47.2785 3.33147 46.3446 2.24086V2.24086C45.3076 1.03001 43.4611 0.953327 42.3273 2.07403L2.06227 41.8746C0.925251 42.9985 0.919929 44.833 2.05041 45.9635V45.9635C3.17548 47.0885 4.9993 47.0894 6.12548 45.9655L46.1986 5.97173Z" fill="white" />
+                        </svg>
+                     </span>
+                  </a>
+                  <a class="section-8__social-item d-f ai-c p-r wp-100" href="https://instagram.com/fox.lab.nf?igshid=YmMyMTA2M2Y=">
+                     <span class="section-8__social-link t-up d-ib">Instagram</span>
+                     <span class="section-8__social-btn p-a d-b bg-pink">
+                        <svg class="section-8__social-btn-line" width="14" height="14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M2.5 0C1.11929 0 0 1.11929 0 2.5V2.5C0 3.88071 1.11929 5 2.5 5H45.5C46.8807 5 48 3.88071 48 2.5V2.5C48 1.11929 46.8807 0 45.5 0H2.5Z" fill="white" />
+                           <path d="M48 2.5C48 1.11929 46.8807 0 45.5 0V0C44.1193 0 43 1.11929 43 2.5V45.5C43 46.8807 44.1193 48 45.5 48V48C46.8807 48 48 46.8807 48 45.5V2.5Z" fill="white" />
+                           <path d="M46.1986 5.97173C47.2149 4.95742 47.2785 3.33147 46.3446 2.24086V2.24086C45.3076 1.03001 43.4611 0.953327 42.3273 2.07403L2.06227 41.8746C0.925251 42.9985 0.919929 44.833 2.05041 45.9635V45.9635C3.17548 47.0885 4.9993 47.0894 6.12548 45.9655L46.1986 5.97173Z" fill="white" />
+                        </svg>
+                     </span>
+                  </a>
+                  <a class="section-8__social-item d-f ai-c p-r wp-100" href="https://vk.com/foxlabnf">
+                     <span class="section-8__social-link t-up d-ib">Vkontakte</span>
+                     <span class="section-8__social-btn p-a d-b bg-pink">
+                        <svg class="section-8__social-btn-line" width="14" height="14" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M2.5 0C1.11929 0 0 1.11929 0 2.5V2.5C0 3.88071 1.11929 5 2.5 5H45.5C46.8807 5 48 3.88071 48 2.5V2.5C48 1.11929 46.8807 0 45.5 0H2.5Z" fill="white" />
+                           <path d="M48 2.5C48 1.11929 46.8807 0 45.5 0V0C44.1193 0 43 1.11929 43 2.5V45.5C43 46.8807 44.1193 48 45.5 48V48C46.8807 48 48 46.8807 48 45.5V2.5Z" fill="white" />
+                           <path d="M46.1986 5.97173C47.2149 4.95742 47.2785 3.33147 46.3446 2.24086V2.24086C45.3076 1.03001 43.4611 0.953327 42.3273 2.07403L2.06227 41.8746C0.925251 42.9985 0.919929 44.833 2.05041 45.9635V45.9635C3.17548 47.0885 4.9993 47.0894 6.12548 45.9655L46.1986 5.97173Z" fill="white" />
+                        </svg>
+                     </span>
+                  </a>
+                  <a class="section-8__btn t-up d-f m-a ai-c jc-c bg-pink wp-100 t-up" href="http://arn.su/EDj">Sign up for the procedure</a>
+               </div>
+               <picture class="section-8__picture">
+                  <source srcset="/img/webp/section-8__img.webp" type="image/webp" />
+                  <img class="section-8__img br wp-100" src="/img/png/section-8__img.png" alt="Img procedure" loading="lazy" width="300" height="370" />
+               </picture>
+            </div>
+         </section>
+         @include('html/components/modal.html')
+      </main>
+      @include('html/components/footer.html')
    </body>
 </html>
