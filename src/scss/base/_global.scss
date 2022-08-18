@@ -43,6 +43,9 @@
    @include md {
       border-radius: 28px;
    }
+   @include xl {
+      border-radius: 38px;
+   }
 }
 .wp-100 {
    width: 100%;
