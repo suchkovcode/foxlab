@@ -1,0 +1,190 @@
+.section-2 {
+   padding: 90px 20px 0px 20px;
+   @include md {
+      padding: 120px 20px 0px 20px;
+   }
+   @include lg {
+      padding: 140px 30px 0px 30px;
+   }
+   @include xl {
+      padding: 160px 30px 0px 30px;
+   }
+   @include xxl {
+      padding: 200px 30px 0px 30px;
+   }
+   &__title {
+      margin-bottom: 30px;
+      font: var(--font_sec3_title);
+      @include lg {
+         margin-bottom: 50px;
+      }
+   }
+
+   &__card {
+      margin-bottom: 50px;
+      grid-template-columns: 1fr;
+      @include md {
+         grid-template-columns: 1fr 1fr;
+         grid-template-areas:
+            "card_1 card_2"
+            "card_3 .";
+      }
+      @include lg {
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-areas: "card_1 card_2 card_3";
+         margin-bottom: 80px;
+      }
+      @include xl {
+         margin-bottom: 150px;
+      }
+      &-item {
+         padding: 20px;
+         background-color: var(--color_secondary);
+         @include sm {
+            padding: 25px;
+         }
+         @include lg {
+            padding: 30px;
+         }
+         @include xxl {
+            padding: 40px;
+         }
+      }
+      &-btn {
+         width: 35px;
+         height: 35px;
+         margin-bottom: 30px;
+         border-radius: 100px;
+         background-color: var(--color_pink);
+         @include sm {
+            width: 40px;
+            height: 40px;
+         }
+         @include md {
+            width: 45px;
+            height: 45px;
+         }
+         @include xxl {
+            width: 50px;
+            height: 50px;
+         }
+         @include xxxl {
+            width: 55px;
+            height: 55px;
+         }
+      }
+      &-text {
+         font: 400 15px/1 "Montserrat";
+         color: var(--color_base);
+         @include sm {
+            font: 400 16px/1 "Montserrat";
+         }
+         @include xxl {
+            font: 400 18px/1 "Montserrat";
+         }
+         @include xxxl {
+            font: 400 20px/1 "Montserrat";
+         }
+      }
+      &-title {
+         font: var(--font_card_title);
+         margin-bottom: 20px;
+         @include sm {
+            max-width: 350px;
+         }
+      }
+      &-bullet {
+         gap: 10px;
+         margin-bottom: 30px;
+         @include xl {
+            margin-bottom: 50px;
+         }
+         &-item {
+            gap: 10px;
+            font: var(--font_bullet_item);
+            @include sm {
+               max-width: 350px;
+            }
+            @include xxl {
+               max-width: 380px;
+            }
+            &::before {
+               content: " ";
+               display: inline-block;
+               min-width: 4px;
+               min-height: 4px;
+               max-height: 4px;
+               margin-top: 8px;
+               border-radius: 100px;
+               background-color: var(--color_text);
+               @include xl {
+                  min-width: 6px;
+                  min-height: 6px;
+                  max-height: 6px;
+                  margin-top: 9px;
+               }
+            }
+         }
+      }
+      &-price {
+         margin-top: auto;
+      }
+
+      &-time {
+         font: 400 16px/1.45 "Montserrat";
+         @include sm {
+            font: 400 18px/1.45 "Montserrat";
+         }
+         @include lg {
+            font: 400 20px/1.45 "Montserrat";
+         }
+         @include xxl {
+            font: 400 22px/1.45 "Montserrat";
+         }
+      }
+
+      &-value {
+         font: 400 26px/1 "Montserrat";
+         @include sm {
+            font: 400 28px/1 "Montserrat";
+         }
+         @include lg {
+            font: 400 30px/1 "Montserrat";
+         }
+         @include xxl {
+            font: 400 34px/1 "Montserrat";
+         }
+      }
+   }
+   &__card-1 {
+      @include md {
+         grid-area: card_1;
+      }
+   }
+   &__card-2 {
+      @include md {
+         grid-area: card_2;
+      }
+   }
+   &__card-3 {
+      @include md {
+         grid-area: card_3;
+      }
+   }
+   &__btn {
+      height: 65px;
+      width: 100%;
+      max-width: 380px;
+      border-radius: 50px;
+      margin: 0 auto;
+      font: var(--font_btn);
+      @include lg {
+         height: 75px;
+      }
+      &:hover,
+      &:active,
+      &:focus {
+         background-color: var(--color_secondary);
+      }
+   }
+}

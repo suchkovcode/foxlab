@@ -1,0 +1,88 @@
+.section-3 {
+   padding: 90px 20px;
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas:
+      "img_2 img_3"
+      "img_4 img_5"
+      "img_1 img_1";
+   @include md {
+      padding: 120px 20px;
+   }
+   @include lg {
+      grid-template-columns: 1.6fr 0.9fr 0.9fr;
+      grid-template-areas:
+         "img_1 img_2 img_3"
+         "img_1 img_4 img_5";
+      padding: 140px 30px;
+   }
+   @include xl {
+      padding: 160px 30px;
+   }
+   @include xxl {
+      padding: 180px 30px;
+   }
+   @include xxl {
+      padding: 200px 30px;
+   }
+
+   &__picture-1 {
+      grid-area: img_1;
+   }
+   &__picture-2 {
+      grid-area: img_2;
+   }
+   &__picture-3 {
+      grid-area: img_3;
+   }
+   &__picture-4 {
+      grid-area: img_4;
+   }
+   &__picture-5 {
+      grid-area: img_5;
+   }
+
+   &__img-1 {
+      object-fit: cover;
+      object-position: 0 80%;
+      @include sm {
+         height: 450px;
+      }
+      @include md {
+         height: 550px;
+      }
+      @include lg {
+         height: 420px;
+      }
+      @include xl {
+         height: 500px;
+      }
+      @include xxl {
+         height: 600px;
+      }
+      @include xxxl {
+         height: 700px;
+      }
+   }
+   &__img-2,
+   &__img-3,
+   &__img-4,
+   &__img-5 {
+      height: 100%;
+      object-fit: cover;
+      @include md {
+         height: 260px;
+      }
+      @include lg {
+         height: 200px;
+      }
+      @include xl {
+         height: 236px;
+      }
+      @include xxl {
+         height: 288px;
+      }
+      @include xxxl {
+         height: 338px;
+      }
+   }
+}

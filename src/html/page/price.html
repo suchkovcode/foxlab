@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+   @loop("html/components/head.html", "../../data/head-price.json")
+   <body class="page p-r">
+      @include('html/components/header.html', {"page": "header__logo--price", "border": "header__toggler--price"})
+      <main class="main">
+         <!-- <section class="section-1 contain">
+            <h1 class="section-1__title t-up">The cost of our services</h1>
+            <div class="tabs d-f">
+               <div class="tab tab--1 t-up">Laser hair removal</div>
+               <div class="tab tab--2 t-up">Facial procedures</div>
+               <div class="tab tab--3 t-up">Body procedures</div>
+            </div>
+            <div class="section-1__price-1"></div>
+            <div class="section-1__price-2"></div>
+            <div class="section-1__price-2"></div>
+         </section> -->
+         <section class="section-2 contain bg-p">
+            <h2 class="section-2__title t-up">Complex facial <br> procedures</h2>
+            <div class="section-2__card d-g gap">
+               <div class="section-2__card-item section-2__card-1 d-f fd-c br">
+                  <div class="section-2__card-btn d-f jc-c ai-c">
+                     <p class="section-2__card-text t-up">01</p>
+                  </div>
+                  <h3 class="section-2__card-title t-up">Porcelain doll</h3>
+                  <ul class="section-2__card-bullet d-f fd-c">
+                     <li class="section-2__card-bullet-item d-f">Ultrasound cleaning</li>
+                     <li class="section-2__card-bullet-item d-f">phonoferez</li>
+                     <li class="section-2__card-bullet-item d-f">serum</li>
+                  </ul>
+                  <div class="section-2__card-price d-f jc-sb ai-c">
+                     <p class="section-2__card-time">30-40 min</p>
+                     <p class="section-2__card-value">$100</p>
+                  </div>  
+               </div>
+               <div class="section-2__card-item section-2__card-2 d-f fd-c br">
+                  <div class="section-2__card-btn d-f jc-c ai-c">
+                     <p class="section-2__card-text t-up">02</p>
+                  </div>
+                  <h3 class="section-2__card-title t-up">Hollywood care</h3>
+                  <ul class="section-2__card-bullet d-f fd-c">
+                     <li class="section-2__card-bullet-item d-f">Ultrasound cleaning</li>
+                     <li class="section-2__card-bullet-item d-f">Hydropiling</li>
+                     <li class="section-2__card-bullet-item d-f">phonoferez</li>
+                     <li class="section-2__card-bullet-item d-f">RF lifting or microtoki</li>
+                     <li class="section-2__card-bullet-item d-f">mesotherapy</li>
+                     <li class="section-2__card-bullet-item d-f">cryotherapy</li>
+                     <li class="section-2__card-bullet-item d-f">cosmetic mask+led mask</li>
+                  </ul>
+                  <div class="section-2__card-price d-f jc-sb ai-c">
+                     <p class="section-2__card-time">2.5 hours</p>
+                     <p class="section-2__card-value">$200</p>
+                  </div>  
+               </div>
+               <div class="section-2__card-item section-2__card-3 d-f fd-c br">
+                  <div class="section-2__card-btn d-f jc-c ai-c">
+                     <p class="section-2__card-text t-up">03</p>
+                  </div>
+                  <h3 class="section-2__card-title t-up">Spa</h3>
+                  <ul class="section-2__card-bullet d-f fd-c">
+                     <li class="section-2__card-bullet-item d-f">Ultrasound cleaning</li>
+                     <li class="section-2__card-bullet-item d-f">Hydropiling (vacuum/hydrogen)</li>
+                     <li class="section-2__card-bullet-item d-f">Mask</li>
+                  </ul>
+                  <div class="section-2__card-price d-f jc-sb ai-c">
+                     <p class="section-2__card-time">1 time</p>
+                     <p class="section-2__card-value">$150</p>
+                  </div>  
+               </div>
+            </div>
+            <a class="section-2__btn t-up d-f jc-c ai-c bg-pink" href="http://arn.su/EDj">Sign up for the procedure</a>
+         </section>
+         <section class="section-3 contain d-g bg-p gap">
+            <picture class="section-3__picture-1">
+               <source srcset="/img/webp/price-section-3__hero-1.webp" type="image/webp" />
+               <img class="section-3__img-1 br wp-100" src="/img/png/price-section-3__hero-1.png" loading="lazy" alt="Img-1" width="300" height="300" />
+            </picture>
+            <picture class="section-3__picture-2">
+               <source srcset="/img/webp/price-section-3__hero-2.webp" type="image/webp" />
+               <img class="section-3__img-2 br wp-100" src="/img/png/price-section-3__hero-2.png" loading="lazy" alt="Img-2" width="140" height="140" />
+            </picture>
+            <picture class="section-3__picture-3">
+               <source srcset="/img/webp/price-section-3__hero-3.webp" type="image/webp" />
+               <img class="section-3__img-3 br wp-100" src="/img/png/price-section-3__hero-3.png" loading="lazy" alt="Img-3" width="140" height="140" />
+            </picture>
+            <picture class="section-3__picture-4">
+               <source srcset="/img/webp/price-section-3__hero-4.webp" type="image/webp" />
+               <img class="section-3__img-4 br wp-100" src="/img/png/price-section-3__hero-4.png" loading="lazy" alt="Img-4" width="140" height="140" />
+            </picture>
+            <picture class="section-3__picture-5">
+               <source srcset="/img/webp/price-section-3__hero-5.webp" type="image/webp" />
+               <img class="section-3__img-5 br wp-100" src="/img/png/price-section-3__hero-5.png" loading="lazy" alt="Img-5" width="140" height="140" />
+            </picture>
+         </section>
+      </main>
+      @include('html/components/footer.html')
+   </body>
+</html>
