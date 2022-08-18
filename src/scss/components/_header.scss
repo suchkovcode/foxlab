@@ -198,59 +198,6 @@
       }
    }
 
-   &__dropdown {
-      &-toggle {
-         display: flex;
-         align-items: center;
-         gap: 10px;
-         &.active ~ .header__dropdown-toggle::after {
-            transform: rotate(0deg);
-         }
-         &.active ~ .header__dropdown-menu {
-            visibility: visible;
-            padding: 15px 10px;
-            height: 100%;
-         }
-
-         &::after {
-            content: " ";
-            display: block;
-            width: 8px;
-            height: 8px;
-            margin-top: 2px;
-            transform-origin: center;
-            transform: rotate(-90deg);
-            background-image: url("../img/svg/header__poligon.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            @include lg {
-               display: none;
-            }
-         }
-      }
-
-      &-menu {
-         visibility: hidden;
-         height: 0px;
-         display: flex;
-         flex-flow: column;
-         gap: 10px;
-         @include lg {
-            display: none;
-         }
-      }
-      &-link {
-         font: 400 16px/1.45 "Circe";
-         color: var(--color_text);
-         @include md {
-            font: 400 18px/1.45 "Circe";
-         }
-         &:hover {
-            color: var(--color_pink);
-         }
-      }
-   }
-
    &__social {
       display: flex;
       align-items: center;
