@@ -45,6 +45,9 @@
             height: auto;
          }
       }
+      &--price > .header__logo-img > path {
+         fill: #182a31;
+      }
    }
 
    &__toggler {
@@ -63,6 +66,18 @@
       }
       &.active {
          border: 1px solid var(--color_pink);
+      }
+      &--price {
+         border: 1px solid #182a31;
+         & > .header__toggler-icon {
+            background-color: #182a31;
+            &::after {
+               background-color: #182a31;
+            }
+            &::before {
+               background-color: #182a31;
+            }
+         }
       }
       &-icon {
          position: relative;
@@ -158,9 +173,6 @@
          }
       }
       &-item {
-         &:nth-child(1) {
-            display: none;
-         }
          &:nth-child(7) {
             @include lg {
                margin-left: clamp(4.8rem, -17.1385rem + 35.3846vw, 9.4rem);
