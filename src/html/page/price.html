@@ -4,19 +4,15 @@
    <body class="page p-r">
       @include('html/components/header.html', {"page": "header__logo--price", "border": "header__toggler--price"})
       <main class="main">
-         <!-- <section class="section-1 contain">
+         <section class="section-1 bg-p">
             <h1 class="section-1__title t-up">The cost of our services</h1>
-            <div class="tabs d-f">
-               <div class="tab tab--1 t-up">Laser hair removal</div>
-               <div class="tab tab--2 t-up">Facial procedures</div>
-               <div class="tab tab--3 t-up">Body procedures</div>
-            </div>
-            <div class="section-1__price-1"></div>
-            <div class="section-1__price-2"></div>
-            <div class="section-1__price-2"></div>
-         </section> -->
+            @include('html/components/table.html')
+         </section>
          <section class="section-2 contain bg-p">
-            <h2 class="section-2__title t-up">Complex facial <br> procedures</h2>
+            <h2 class="section-2__title t-up">
+               Complex facial <br />
+               procedures
+            </h2>
             <div class="section-2__card d-g gap">
                <div class="section-2__card-item section-2__card-1 d-f fd-c br">
                   <div class="section-2__card-btn d-f jc-c ai-c">
@@ -31,7 +27,7 @@
                   <div class="section-2__card-price d-f jc-sb ai-c">
                      <p class="section-2__card-time">30-40 min</p>
                      <p class="section-2__card-value">$100</p>
-                  </div>  
+                  </div>
                </div>
                <div class="section-2__card-item section-2__card-2 d-f fd-c br">
                   <div class="section-2__card-btn d-f jc-c ai-c">
@@ -50,7 +46,7 @@
                   <div class="section-2__card-price d-f jc-sb ai-c">
                      <p class="section-2__card-time">2.5 hours</p>
                      <p class="section-2__card-value">$200</p>
-                  </div>  
+                  </div>
                </div>
                <div class="section-2__card-item section-2__card-3 d-f fd-c br">
                   <div class="section-2__card-btn d-f jc-c ai-c">
@@ -65,7 +61,7 @@
                   <div class="section-2__card-price d-f jc-sb ai-c">
                      <p class="section-2__card-time">1 time</p>
                      <p class="section-2__card-value">$150</p>
-                  </div>  
+                  </div>
                </div>
             </div>
             <a class="section-2__btn t-up d-f jc-c ai-c bg-pink" href="http://arn.su/EDj">Sign up for the procedure</a>
@@ -91,7 +87,7 @@
                <source srcset="/img/webp/price-section-3__hero-5.webp" type="image/webp" />
                <img class="section-3__img-5 br wp-100" src="/img/png/price-section-3__hero-5.png" loading="lazy" alt="Img-5" width="140" height="140" />
             </picture>
-         </section>
+         </section> 
       </main>
       @include('html/components/footer.html')
    </body>

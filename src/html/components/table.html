@@ -1,0 +1,24 @@
+<div class="section-1__price">
+   <table class="table">
+      <thead class="table__header">
+         <tr class="table__row">
+            <th class="table__header-item ta-c"><em>№</em></th>
+            <th class="table__header-item"><em>Procedure</em></th>
+            <th class="table__header-item ta-c"><em>1 session</em></th>
+            <th class="table__header-item ta-c"><em>5 sessions (-15%)</em></th>
+            <th class="table__header-item ta-c"><em>10 sessions (-20%)</em></th>
+         </tr>
+      </thead>
+      <tbody class="table__body">
+         @loop("html/components/table-data.html", "../../data/price-1.json")
+         <tr class="table__spase"></tr>
+         @loop("html/components/table-data.html", "../../data/price-2.json")
+         <tr class="table__spase"></tr>
+         @loop("html/components/table-data.html", "../../data/price-3.json")
+         <tr class="table__spase"></tr>
+         @loop("html/components/table-data.html", "../../data/price-4.json")
+         <tr class="table__spase"></tr>
+         @loop("html/components/table-data.html", "../../data/price-5.json")
+      </tbody>
+   </table>
+</div>
