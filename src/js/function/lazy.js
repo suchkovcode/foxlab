@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+export const lazy = (() => {
    let lazyLoadVideos = [].slice.call(document.querySelectorAll(".lazy-video"));
    if ("IntersectionObserver" in window) {
       let lazyVideoObserver = new IntersectionObserver(function (entries, observer) {
@@ -20,4 +20,4 @@ document.addEventListener("DOMContentLoaded", () => {
          lazyVideoObserver.observe(lazyVideo);
       });
    }
-});
+})();

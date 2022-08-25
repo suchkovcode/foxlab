@@ -44,8 +44,17 @@
       "gulp-sourcemaps": "^3.0.0",
       "gulp-webp": "^4.0.1",
       "gulp-zip": "^5.1.0",
+      "imports-loader": "^4.0.1",
       "require-dir": "^1.2.0",
       "sass": "^1.54.5",
       "webpack-stream": "^7.0.0"
+   },
+   "dependencies": {
+      "cleave.js": "^1.6.0",
+      "jquery": "^3.6.0",
+      "jquery.marquee": "^1.6.0",
+      "just-validate": "^3.8.1",
+      "simple-parallax-js": "^5.6.2",
+      "smoothscroll-for-websites": "^1.4.10"
    }
 }
