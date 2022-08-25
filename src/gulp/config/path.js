@@ -23,10 +23,10 @@ const path = {
       watch: "./src/scss/**/*.{scss,sass}",
    },
    js: {
-      src: "./src/js/*.js",
+      src: "./src/js/script.js",
       dev: "./build/js/",
       pub: "./public/js/",
-      watch: "./src/js/**/*",
+      watch: ["./src/js/**/*.js", "!./src/js/vendor.js" ]
    },
    img: {
       src: "./src/img/**/*",
@@ -55,26 +55,11 @@ const path = {
       pub: "./public/video/",
       watch: "./src/video/**/*",
    },
-   vendorCSS: {
-      src: "./src/libs/**/*.css",
-      dev: "./build/css/",
-      pub: "./public/css/",
-      watch: "./src/libs/**/*.css",
-   }, 
    vendorJs: {
-      src: ["./src/libs/jquery/*.js", "./src/libs/justValidate/*.js", "./src/libs/cleave/cleave-1.6.0.js", "./src/libs/cleave/cleave-phone.us.min.js", "./src/libs/parallaks/simpleParallax.min.js"],
+      src: "./src/js/vendor.js",
       dev: "./build/js/",
       pub: "./public/js/",
-      watch: "./src/libs/**/*.js",
-   },
-   favicon: {
-      src: "./src/img/png/favicon.png",
-      dev: "./build/img/favicon/",
-      pub: "./public/img/favicon/",
-   },
-   sitemap: {
-      src: "./public/**/*.html",
-      pub: "./public/",
+      watch: "./src/js/vendor.js",
    },
    zip: {
       src: "./public/**/*",
