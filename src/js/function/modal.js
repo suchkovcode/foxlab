@@ -5,7 +5,7 @@ export const modal = (() => {
       const dialog = document.querySelector(".modal");
       const body = document.querySelector(".page");
       const overlay = document.querySelector(".modal__overlay");
-      
+
       openModal.addEventListener("click", () => {
          body.classList.add("pop-up");
          dialog.classList.add("open");
@@ -17,18 +17,18 @@ export const modal = (() => {
       overlay.addEventListener("click", () => {
          dialog.classList.remove("open");
       });
-      
+
       const validate = new window.JustValidate(".form", {
          errorFieldCssClass: "form__input-error",
          successFieldCssClass: "form__input-success",
-      
+
          errorLabelCssClass: "form__label-error",
          successLabelCssClass: "form__label-success",
-      
+
          focusInvalidField: true,
          lockForm: true,
       });
-      
+
       validate
          .addField("#inputName", [
             {
@@ -62,11 +62,9 @@ export const modal = (() => {
                errorMessage: "Maximum 13 characters",
             },
          ]);
-         let cleave = new Cleave('#inputTel', {
-            phone: true,
-            phoneRegionCode: 'US'
-         });
-      
-    }   
+      let cleave = new Cleave("#inputTel", {
+         phone: true,
+         phoneRegionCode: "US",
+      });
+   }
 })();
-
