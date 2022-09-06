@@ -1,10 +1,14 @@
 build/
 dist/
 public/
+gulp/
+img/
+fonts/
 package-lock.json
 **/.git
 **/.svn
 **/.hg
 **/node_modules
 .gitignore
+.gitkeep
 .eslintignore
