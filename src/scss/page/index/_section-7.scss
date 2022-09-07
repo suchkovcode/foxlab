@@ -45,8 +45,8 @@
    }
 
    &__card-info {
-      bottom: 0;
       left: 0;
+      bottom: 0;
       padding: 20px;
       @include md {
          height: 305px;
@@ -66,8 +66,8 @@
    &__card-tag {
       margin-bottom: 25px;
       padding: 8px 15px;
-      color: var(--color_text);
       font: var(--font_card_tag);
+      color: var(--color_text);
       border: 1px solid var(--color_text);
       @include xxl {
          padding: 10px 18px;

@@ -1,6 +1,6 @@
 .table {
-   width: 100%;
    overflow-x: auto;
+   width: 100%;
 
    &__header {
       border-bottom: 1px solid rgb(51 51 51 / 20%);
@@ -49,8 +49,8 @@
    &__col {
       padding: 15px;
       font: 400 16px/1.45 "Montserrat";
-      white-space: nowrap;
       text-transform: capitalize;
+      white-space: nowrap;
 
       &:nth-child(1) {
          width: 10%;

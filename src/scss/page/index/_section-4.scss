@@ -1,8 +1,8 @@
 .section-4 {
-   padding: 90px 0;
-   overflow-x: hidden;
-   background-color: var(--color_primary);
    contain: layout paint;
+   overflow-x: hidden;
+   padding: 90px 0;
+   background-color: var(--color_primary);
 
    &__marquee {
       &-text {
@@ -23,20 +23,20 @@
          display: inline-block;
          min-width: 8px;
          min-height: 8px;
-         background-color: var(--color_text);
          border-radius: 50px;
+         background-color: var(--color_text);
       }
    }
 
    .js-marquee-wrapper {
-      display: flex;
       overflow: hidden;
+      display: flex;
    }
 
    .js-marquee {
       display: flex;
-      gap: 20px;
       align-items: center;
+      gap: 20px;
    }
 
    &__img-box {
@@ -45,9 +45,9 @@
          "img_3 img_3"
          "img_4 img_5";
       grid-template-columns: 1fr 1fr;
-      gap: 15px;
       margin: 30px 0;
       padding: 0 20px;
+      gap: 15px;
       @include sm {
          margin: 40px 0;
       }
@@ -62,8 +62,8 @@
             "img_1 img_5 . img_4"
             ". img_2 img_3 img_3";
          grid-template-columns: 1fr 1fr 1fr 1fr;
-         gap: 25px;
          padding: 0 30px;
+         gap: 25px;
       }
       @include xxl {
          margin: 60px 0;

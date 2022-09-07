@@ -31,8 +31,8 @@
          width: 35px;
          height: 35px;
          margin-bottom: 30px;
-         background-color: var(--color_pink);
          border-radius: 100px;
+         background-color: var(--color_pink);
          @include sm {
             width: 40px;
             height: 40px;
@@ -52,8 +52,8 @@
       }
 
       &-text {
-         color: var(--color_base);
          font: 400 15px/1 "Montserrat";
+         color: var(--color_base);
          @include sm {
             font: 400 16px/1 "Montserrat";
          }
@@ -74,22 +74,22 @@
       }
 
       &-bullet {
-         gap: 10px;
          margin-bottom: 30px;
+         gap: 10px;
 
          &-item {
-            gap: 10px;
             font: var(--font_bullet_item);
+            gap: 10px;
 
             &::before {
+               content: " ";
                display: inline-block;
                min-width: 4px;
                min-height: 4px;
                max-height: 4px;
                margin-top: 8px;
-               background-color: var(--color_text);
                border-radius: 100px;
-               content: " ";
+               background-color: var(--color_text);
                @include xl {
                   min-width: 6px;
                   min-height: 6px;
@@ -174,8 +174,8 @@
 
    &__btn {
       width: 100%;
-      max-width: 380px;
       height: 65px;
+      max-width: 380px;
       margin: 0 auto;
       font: var(--font_btn);
       border-radius: 50px;

@@ -1,13 +1,13 @@
 .btn {
+   cursor: pointer;
    width: 300px;
    height: 60px;
-   color: var(--color_base);
    font: var(--font_btn);
    text-align: center;
-   background-color: transparent;
+   color: var(--color_base);
    border: 1px solid var(--color_pink);
    border-radius: 50px;
-   cursor: pointer;
+   background-color: transparent;
    transition: background-color 0.3s linear;
 
    &:hover,

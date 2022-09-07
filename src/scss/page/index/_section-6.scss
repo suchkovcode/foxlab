@@ -1,16 +1,16 @@
 .section-6 {
    &__picture {
       &::before {
+         content: " ";
          position: absolute;
-         top: 0;
          left: 0;
+         top: 0;
          z-index: 1;
          display: block;
          width: 100%;
          height: 100%;
-         background-color: #000;
          opacity: 0.4;
-         content: " ";
+         background-color: #000;
       }
    }
 
@@ -39,8 +39,8 @@
    }
 
    &__content {
-      top: 50%;
       left: 50%;
+      top: 50%;
       z-index: 10;
       width: 100%;
       padding: 0 20px;
@@ -49,16 +49,16 @@
 
    &__title {
       margin-bottom: 10px;
-      color: var(--color_base);
       font: var(--font_sec6_title);
       text-align: center;
+      color: var(--color_base);
    }
 
    &__subtitle {
       margin-bottom: 30px;
-      color: var(--color_base);
       font: var(--font_subtitle);
       text-align: center;
+      color: var(--color_base);
       @include xl {
          font: 400 24px/1.45 "Montserrat";
       }
@@ -66,9 +66,9 @@
 
    &__cta {
       margin-bottom: 30px;
-      color: var(--color_base);
       font: 600 18px/1.45 "Montserrat";
       text-align: center;
+      color: var(--color_base);
       @include md {
          font: 600 20px/1.45 "Montserrat";
       }

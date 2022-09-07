@@ -1,23 +1,23 @@
 .modal {
-   top: 0;
+   visibility: hidden;
    left: 0;
+   top: 0;
    z-index: 100;
    width: 100%;
    height: 100%;
    margin: 0;
    padding: 0;
    border-width: 0;
-   visibility: hidden;
    opacity: 0;
    transition: all 0.3s linear;
 
    &__overlay {
-      top: 0;
       left: 0;
+      top: 0;
       z-index: -1;
       height: 100%;
-      background-color: #000;
       opacity: 0.4;
+      background-color: #000;
       @include md {
          height: calc(1050px + 110px);
       }
@@ -36,13 +36,13 @@
    }
 
    &__close-btn {
-      top: 15px;
+      cursor: pointer;
       right: 15px;
+      top: 15px;
       width: 45px;
       height: 45px;
       padding: 10px;
       border-radius: 100%;
-      cursor: pointer;
       transition: 0.2s linear;
 
       &:hover {
@@ -56,13 +56,13 @@
       transform: rotate(-45deg);
 
       &::after {
+         content: " ";
          position: relative;
          display: block;
          width: 100%;
          height: 2px;
          background-color: inherit;
          transform: rotate(90deg);
-         content: " ";
       }
    }
 
@@ -94,9 +94,9 @@
    }
 
    &.open {
-      display: flex;
-      overflow-y: scroll;
       visibility: visible;
+      overflow-y: scroll;
+      display: flex;
       opacity: 1;
    }
 }
@@ -117,39 +117,39 @@
    }
 
    &__checkbox-item {
-      gap: 15px;
       margin-bottom: 10px;
+      gap: 15px;
    }
 
    &__checkbox-label {
-      font: 400 18px/1 "Montserrat";
       cursor: pointer;
+      font: 400 18px/1 "Montserrat";
 
       &::before {
+         content: " ";
+         cursor: pointer;
          position: absolute;
-         top: 0;
          left: 0;
+         top: 0;
          width: 25px;
          height: 25px;
-         background-color: var(--color_base);
          border: 1px solid var(--color_secondary);
          border-radius: 4px;
-         cursor: pointer;
+         background-color: var(--color_base);
          transition: all 0.2s linear;
-         content: " ";
       }
 
       &::after {
+         content: "\2714";
          position: absolute;
-         top: 2px;
          left: 4px;
+         top: 2px;
          display: inline-block;
          width: 25px;
          height: 25px;
-         color: transparent;
          font-size: 22px;
+         color: transparent;
          transition: all 0.2s ease-in-out 0.1s;
-         content: "\2714";
       }
    }
 
@@ -169,8 +169,8 @@
    }
 
    &__input-container {
-      gap: 25px;
       margin-bottom: 30px;
+      gap: 25px;
    }
 
    &__input-label {
@@ -187,8 +187,8 @@
       border-radius: 7px;
 
       &::placeholder {
-         color: rgb(187 187 187);
          font: 400 16px/1 "Circe";
+         color: rgb(187 187 187);
       }
 
       &:focus {
@@ -213,13 +213,13 @@
    }
 
    &__btn {
+      cursor: pointer;
       width: 100%;
       height: 50px;
       margin-bottom: 20px;
-      color: var(--color_base);
       font: 600 16px/1.45 "Montserrat";
+      color: var(--color_base);
       border-radius: 50px;
-      cursor: pointer;
       transition: all 0.2s linear;
 
       &:hover {
@@ -228,9 +228,9 @@
    }
 
    &__policy {
-      color: rgb(114 114 114);
       font: 400 13px/1.45 "Montserrat";
       text-align: center;
+      color: rgb(114 114 114);
    }
 
    &__mark {

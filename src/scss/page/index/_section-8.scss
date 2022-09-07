@@ -70,18 +70,18 @@
       }
 
       &-bullet-item {
-         gap: 10px;
          font: var(--font_bullet_item);
+         gap: 10px;
 
          &::before {
+            content: " ";
             display: inline-block;
             min-width: 4px;
             min-height: 4px;
             max-height: 4px;
             margin-top: 8px;
-            background-color: var(--color_text);
             border-radius: 100px;
-            content: " ";
+            background-color: var(--color_text);
             @include xl {
                min-width: 6px;
                min-height: 6px;
@@ -140,8 +140,8 @@
 
       &:hover {
          color: var(--color_text);
-         background-color: var(--color_secondary);
          border: 1px solid var(--color_secondary);
+         background-color: var(--color_secondary);
       }
       @include sm {
          padding: 25px;
@@ -160,8 +160,8 @@
 
    &__social-link {
       height: 13px;
-      color: var(--color_text);
       font: 600 16px/1 "Circe";
+      color: var(--color_text);
       @include xl {
          height: 15px;
          font: 600 18px/1 "Circe";
@@ -173,8 +173,8 @@
    }
 
    &__social-btn {
-      top: calc(50% - 16px);
       right: 20px;
+      top: calc(50% - 16px);
       z-index: 1;
       width: 32px;
       height: 32px;
@@ -201,8 +201,8 @@
          height: 45px;
       }
       @include xxxl {
-         top: calc(50% - 27px);
          right: 30px;
+         top: calc(50% - 27px);
          width: 55px;
          height: 55px;
          padding: 14px;
@@ -217,8 +217,8 @@
 
       &:hover {
          color: var(--color_text);
-         background-color: transparent;
          border: 1px solid var(--color_text);
+         background-color: transparent;
       }
       @include lg {
          height: 80px;
