@@ -2,5 +2,7 @@ gulp/
 .gitignore
 .prettierignore
 .prettierrc.json
-gulpfile.js
-*.js.map
+.vscode
+.js.map
+.gitkeep
+vendor.js
