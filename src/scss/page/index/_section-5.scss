@@ -1,18 +1,6 @@
 .section-5 {
-   padding: 0 20px 80px 20px;
+   padding: 0 20px 80px;
    background-color: var(--color_primary);
-   @include lg {
-      padding: 0 30px 80px 30px;
-   }
-   @include xl {
-      padding: 0 30px 100px 30px;
-   }
-   @include xxl {
-      padding: 0 30px 140px 30px;
-   }
-   @include xxxl {
-      padding: 0 30px 160px 30px;
-   }
 
    &__header {
       margin-bottom: 30px;
@@ -27,19 +15,6 @@
 
    &__offer {
       grid-template-columns: 1fr;
-      @include md {
-         grid-template-columns: 1fr 1fr;
-         grid-template-areas:
-            "of_1 img"
-            "of_1 of_2"
-            "of_3 of_4";
-      }
-      @include xxl {
-         grid-template-columns: 1fr 1fr 1fr;
-         grid-template-areas:
-            "of_1 img of_2"
-            "of_1 of_3 of_4";
-      }
 
       &-item {
          padding: 20px;
@@ -54,12 +29,13 @@
             padding: 40px;
          }
       }
+
       &-btn {
          width: 35px;
          height: 35px;
          margin-bottom: 30px;
-         border-radius: 100px;
          background-color: var(--color_pink);
+         border-radius: 100px;
          @include sm {
             width: 40px;
             height: 40px;
@@ -77,9 +53,10 @@
             height: 55px;
          }
       }
+
       &-text {
-         font: 400 15px/1 "Montserrat";
          color: var(--color_base);
+         font: 400 15px/1 "Montserrat";
          @include sm {
             font: 400 16px/1 "Montserrat";
          }
@@ -92,8 +69,8 @@
       }
 
       &-title {
-         font: var(--font_card_title);
          margin-bottom: 30px;
+         font: var(--font_card_title);
          @include sm {
             max-width: 350px;
          }
@@ -106,21 +83,16 @@
       &-bullet-item {
          gap: 10px;
          font: var(--font_bullet_item);
-         @include sm {
-            max-width: 350px;
-         }
-         @include xxl {
-            max-width: 380px;
-         }
+
          &::before {
-            content: " ";
             display: inline-block;
             min-width: 4px;
             min-height: 4px;
             max-height: 4px;
             margin-top: 8px;
-            border-radius: 100px;
             background-color: var(--color_text);
+            border-radius: 100px;
+            content: " ";
             @include xl {
                min-width: 6px;
                min-height: 6px;
@@ -128,6 +100,25 @@
                margin-top: 9px;
             }
          }
+         @include sm {
+            max-width: 350px;
+         }
+         @include xxl {
+            max-width: 380px;
+         }
+      }
+      @include md {
+         grid-template-areas:
+            "of_1 img"
+            "of_1 of_2"
+            "of_3 of_4";
+         grid-template-columns: 1fr 1fr;
+      }
+      @include xxl {
+         grid-template-areas:
+            "of_1 img of_2"
+            "of_1 of_3 of_4";
+         grid-template-columns: 1fr 1fr 1fr;
       }
    }
 
@@ -172,5 +163,17 @@
       @include md {
          grid-area: of_4;
       }
+   }
+   @include lg {
+      padding: 0 30px 80px;
+   }
+   @include xl {
+      padding: 0 30px 100px;
+   }
+   @include xxl {
+      padding: 0 30px 140px;
+   }
+   @include xxxl {
+      padding: 0 30px 160px;
    }
 }

@@ -1,7 +1,8 @@
 .page {
-   overflow-x: hidden;
    max-width: 2000px;
    margin: 0 auto;
+   overflow-x: hidden;
+
    &.pop-up {
       overflow: hidden;
    }
@@ -9,17 +10,20 @@
       overflow: visible;
    }
 }
+
 .contain {
    contain: layout paint;
 }
+
 .tag {
    margin-bottom: 35px;
+
    &-text {
       padding: 5px 18px;
-      border-radius: 48px;
-      background-color: var(--color_pink);
-      font: var(--font_tag);
       color: var(--color_base);
+      font: var(--font_tag);
+      background-color: var(--color_pink);
+      border-radius: 48px;
       @include md {
          padding: 7px 20px;
       }
@@ -35,9 +39,11 @@
 .t-up {
    text-transform: uppercase;
 }
+
 .t-lw {
    text-transform: none;
 }
+
 .br {
    border-radius: 20px;
    @include md {
@@ -47,12 +53,15 @@
       border-radius: 38px;
    }
 }
+
 .wp-100 {
    width: 100%;
 }
+
 .h-a {
    height: auto;
 }
+
 .m-a {
    margin: 0 auto;
 }
@@ -61,15 +70,19 @@
 .d-f {
    display: flex;
 }
+
 .d-g {
    display: grid;
 }
+
 .d-b {
    display: block;
 }
+
 .d-ib {
    display: inline-block;
 }
+
 .d-n {
    display: none;
 }
@@ -78,12 +91,15 @@
 .p-a {
    position: absolute;
 }
+
 .p-r {
    position: relative;
 }
+
 .p-s {
    position: sticky;
 }
+
 .p-f {
    position: fixed;
 }
@@ -100,15 +116,19 @@
 .fd-c {
    flex-direction: column;
 }
+
 .jc-c {
    justify-content: center;
 }
+
 .jc-sb {
    justify-content: space-between;
 }
+
 .ai-c {
    align-items: center;
 }
+
 .ai-fs {
    align-items: flex-start;
 }
@@ -117,17 +137,20 @@
 .bg-b {
    background-color: var(--color_base);
 }
+
 .bg-p {
    background-color: var(--color_primary);
 }
+
 .bg-s {
    background-color: var(--color_secondary);
 }
+
 .bg-pink {
    background-color: var(--color_pink);
 }
 
 /* Twxt */
 .ta-c {
-   text-align: center;  
+   text-align: center;
 }

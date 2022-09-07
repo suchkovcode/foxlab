@@ -1,24 +1,9 @@
 .section-2 {
    padding: 80px 20px;
-   @include md {
-      padding: 100px 20px;
-   }
-   @include lg {
-      padding: 140px 30px;
-   }
-   @include xl {
-      padding: 160px 30px;
-   }
-   @include xxl {
-      padding: 180px 30px;
-   }
-   @include xxxl {
-      padding: 260px 30px;
-   }
 
    &__grid-container {
-      grid-template-columns: 1fr;
       grid-row-gap: 10px;
+      grid-template-columns: 1fr;
       @include sm {
          gap: 25px;
       }
@@ -28,18 +13,18 @@
             "box";
       }
       @include lg {
-         grid-template-columns: 1fr 1fr;
          grid-template-areas: "img box";
+         grid-template-columns: 1fr 1fr;
       }
       @include xl {
-         grid-template-columns: 0.9fr 1.1fr;
          grid-template-areas: "img box";
+         grid-template-columns: 0.9fr 1.1fr;
       }
    }
 
    &__servises-box {
-      grid-template-columns: 1fr;
       grid-row-gap: 10px;
+      grid-template-columns: 1fr;
       @include sm {
          grid-template-columns: 1fr 1fr;
          gap: 25px;
@@ -49,42 +34,12 @@
       }
    }
 
-   &__servises-item {
-      overflow: hidden;
-      height: 100px;
-      cursor: pointer;
-      @include sm {
-         height: 170px;
-      }
-      @include md {
-         height: 200px;
-      }
-      @include xl {
-         height: 220px;
-      }
-      @include xxl {
-         height: 270px;
-      }
-      @include xxxl {
-         height: 360px;
-      }
-
-      &:hover > .section-2__servises-picture > .section-2__servises-img {
-         visibility: visible;
-         opacity: 1;
-
-      }
-      &:hover > .section-2__servises-title {
-         color: var(--color_base);
-      }
-   }
-
    &__servises-title {
       bottom: 20px;
       left: 20px;
       z-index: 1;
-      font: 600 16px/1.3 "Circe";
       color: var(--color_text);
+      font: 600 16px/1.3 "Circe";
       transition: color 0.4s linear;
       @include sm {
          max-width: 200px;
@@ -107,50 +62,15 @@
       }
    }
 
-   &__servises-btn {
-      top: 20px;
-      right: 20px;
-      z-index: 1;
-      width: 32px;
-      height: 32px;
-      padding: 8px;
-      border-radius: 100px;
-      @include md {
-         width: 40px;
-         height: 40px;
-         top: 30px;
-         right: 30px;
-         padding: 12px;
-      }
-      @include xxl {
-         width: 45px;
-         height: 45px;
-         top: 35px;
-         right: 35px;
-      }
-      @include xxxl {
-         width: 55px;
-         height: 55px;
-         top: 40px;
-         right: 40px;
-         padding: 14px;
-      }
-      &-line {
-         width: 100%;
-         height: auto;
-      }
-   }
-
-
    &__servises-img {
-      visibility: hidden;
       top: 0;
       left: 0;
       z-index: 0;
       width: 100%;
       height: 110px;
-      opacity: 0;
       object-fit: cover;
+      visibility: hidden;
+      opacity: 0;
 
       @include sm {
          height: 170px;
@@ -169,6 +89,71 @@
       }
       @include xxxl {
          height: 360px;
+      }
+   }
+
+   &__servises-item {
+      height: 100px;
+      overflow: hidden;
+      cursor: pointer;
+
+      &:hover > .section-2__servises-picture > .section-2__servises-img {
+         visibility: visible;
+         opacity: 1;
+      }
+
+      &:hover > .section-2__servises-title {
+         color: var(--color_base);
+      }
+      @include sm {
+         height: 170px;
+      }
+      @include md {
+         height: 200px;
+      }
+      @include xl {
+         height: 220px;
+      }
+      @include xxl {
+         height: 270px;
+      }
+      @include xxxl {
+         height: 360px;
+      }
+   }
+
+   &__servises-btn {
+      top: 20px;
+      right: 20px;
+      z-index: 1;
+      width: 32px;
+      height: 32px;
+      padding: 8px;
+      border-radius: 100px;
+
+      &-line {
+         width: 100%;
+         height: auto;
+      }
+      @include md {
+         top: 30px;
+         right: 30px;
+         width: 40px;
+         height: 40px;
+         padding: 12px;
+      }
+      @include xxl {
+         top: 35px;
+         right: 35px;
+         width: 45px;
+         height: 45px;
+      }
+      @include xxxl {
+         top: 40px;
+         right: 40px;
+         width: 55px;
+         height: 55px;
+         padding: 14px;
       }
    }
 
@@ -196,5 +181,20 @@
       @include xxxl {
          height: 745px;
       }
+   }
+   @include md {
+      padding: 100px 20px;
+   }
+   @include lg {
+      padding: 140px 30px;
+   }
+   @include xl {
+      padding: 160px 30px;
+   }
+   @include xxl {
+      padding: 180px 30px;
+   }
+   @include xxxl {
+      padding: 260px 30px;
    }
 }

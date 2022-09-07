@@ -1,13 +1,9 @@
 .section-1 {
    z-index: 1;
    overflow-x: hidden;
-   @include lg {
-      margin-top: -80px;
-   }
 
    &__picture {
       &::before {
-         content: " ";
          position: absolute;
          top: 0;
          left: 0;
@@ -17,8 +13,10 @@
          height: 100%;
          background-color: #000;
          opacity: 0.2;
+         content: " ";
       }
    }
+
    &__img {
       object-fit: cover;
       object-position: top;
@@ -30,9 +28,10 @@
          min-height: 1100px;
       }
    }
+
    &__content {
-      z-index: 10;
       top: calc(50% - 80px);
+      z-index: 10;
       padding: 0 20px;
       @include sm {
          left: calc(50% - 275px);
@@ -55,22 +54,25 @@
 
    &__title {
       margin-bottom: 10px;
-      font: var(--font_title);
       color: var(--color_base);
+      font: var(--font_title);
       text-align: center;
    }
 
    &__subtitle {
       margin-bottom: 50px;
-      font: var(--font_subtitle);
       color: var(--color_base);
+      font: var(--font_subtitle);
       text-align: center;
       @include sm {
          max-width: 380px;
-         margin: 0 auto 50px auto;
+         margin: 0 auto 50px;
       }
       @include md {
          max-width: 100%;
       }
+   }
+   @include lg {
+      margin-top: -80px;
    }
 }

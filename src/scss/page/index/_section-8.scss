@@ -1,20 +1,5 @@
 .section-8 {
    padding: 90px 20px;
-   @include md {
-      padding: 120px 20px;
-   }
-   @include lg {
-      padding: 140px 30px;
-   }
-   @include xl {
-      padding: 160px 30px;
-   }
-   @include xxl {
-      padding: 180px 30px;
-   }
-   @include xxxl {
-      padding: 200px 30px;
-   }
 
    &__header {
       margin-bottom: 30px;
@@ -37,11 +22,11 @@
    &__grid-container {
       grid-template-columns: 1fr;
       @include sm {
-         grid-template-columns: 1fr 1fr;
          grid-template-areas:
             "card_1 card_2"
             "social social"
             "img img";
+         grid-template-columns: 1fr 1fr;
       }
       @include md {
          grid-template-areas:
@@ -50,26 +35,22 @@
             "img img";
       }
       @include lg {
-         grid-template-columns: 1fr 1fr 0.7fr;
          grid-template-areas:
             "card_1 social img"
             "card_2 social img";
+         grid-template-columns: 1fr 1fr 0.7fr;
       }
    }
 
    &__card {
       padding: 20px;
-      @include xl {
-         padding: 30px;
-      }
-      @include xxxl {
-         padding: 35p x;
-      }
+
       &-1 {
          @include sm {
             grid-area: card_1;
          }
       }
+
       &-2 {
          @include sm {
             grid-area: card_2;
@@ -77,8 +58,8 @@
       }
 
       &-title {
-         font: var(--font_card_title);
          margin-bottom: 30px;
+         font: var(--font_card_title);
          @include sm {
             max-width: 350px;
          }
@@ -87,25 +68,20 @@
       &-bullet {
          gap: 10px;
       }
+
       &-bullet-item {
          gap: 10px;
          font: var(--font_bullet_item);
 
-         @include sm {
-            max-width: 350px;
-         }
-         @include xxl {
-            max-width: 380px;
-         }
          &::before {
-            content: " ";
             display: inline-block;
             min-width: 4px;
             min-height: 4px;
             max-height: 4px;
             margin-top: 8px;
-            border-radius: 100px;
             background-color: var(--color_text);
+            border-radius: 100px;
+            content: " ";
             @include xl {
                min-width: 6px;
                min-height: 6px;
@@ -113,16 +89,32 @@
                margin-top: 9px;
             }
          }
+
+         @include sm {
+            max-width: 350px;
+         }
+         @include xxl {
+            max-width: 380px;
+         }
       }
+
       &-adress {
          font-style: normal;
       }
+
       &-link {
          color: var(--color_text);
          transition: all 0.2s linear;
+
          &:hover {
             color: var(--color_pink);
          }
+      }
+      @include xl {
+         padding: 30px;
+      }
+      @include xxxl {
+         padding: 35px;
       }
    }
 
@@ -138,12 +130,14 @@
          gap: 25px;
       }
    }
+
    &__social-item {
-      padding: 20px;
       height: 75px;
-      border-radius: 50px;
+      padding: 20px;
       border: 1px solid var(--color_text);
+      border-radius: 50px;
       transition: background-color 0.3s linear;
+
       &:hover {
          color: var(--color_text);
          background-color: var(--color_secondary);
@@ -163,19 +157,21 @@
          padding: 30px;
       }
    }
+
    &__social-link {
-      font: 600 16px/1 "Circe";
-      color: var(--color_text);
       height: 13px;
+      color: var(--color_text);
+      font: 600 16px/1 "Circe";
       @include xl {
-         font: 600 18px/1 "Circe";
          height: 15px;
+         font: 600 18px/1 "Circe";
       }
       @include xxxl {
-         font: 600 22px/1 "Circe";
          height: 18px;
+         font: 600 22px/1 "Circe";
       }
    }
+
    &__social-btn {
       top: calc(50% - 16px);
       right: 20px;
@@ -184,53 +180,56 @@
       height: 32px;
       padding: 8px;
       border-radius: 100px;
+
+      &-line {
+         width: 100%;
+         height: auto;
+      }
       @include sm {
          right: 25px;
       }
 
       @include md {
+         top: calc(50% - 20px);
          width: 40px;
          height: 40px;
-         top: calc(50% - 20px);
          padding: 12px;
       }
       @include xxl {
+         top: calc(50% - 22px);
          width: 45px;
          height: 45px;
-         top: calc(50% - 22px);
       }
       @include xxxl {
-         width: 55px;
-         height: 55px;
          top: calc(50% - 27px);
          right: 30px;
+         width: 55px;
+         height: 55px;
          padding: 14px;
       }
-      &-line {
-         width: 100%;
-         height: auto;
-      }
    }
+
    &__btn {
-      font: 600 16px/1.3 "Circe";
       height: 75px;
+      font: 600 16px/1.3 "Circe";
       border-radius: 50px;
       transition: all 0.3s linear;
-      @include lg {
-         height: 80px;
-      }
-      @include xl {
-         font: 600 18px/1.3 "Circe";
-         height: 90px;
-      }
-      @include xxxl {
-         font: 600 24px/1.3 "Circe";
-         height: 110px;
-      }
+
       &:hover {
          color: var(--color_text);
          background-color: transparent;
          border: 1px solid var(--color_text);
+      }
+      @include lg {
+         height: 80px;
+      }
+      @include xl {
+         height: 90px;
+         font: 600 18px/1.3 "Circe";
+      }
+      @include xxxl {
+         height: 110px;
+         font: 600 24px/1.3 "Circe";
       }
    }
 
@@ -245,16 +244,31 @@
       min-height: 370px;
       object-fit: cover;
       @include md {
-         object-position: top;
          max-height: 420px;
+         object-position: top;
       }
       @include lg {
-         object-position: center;
          min-height: 100%;
          max-height: auto;
+         object-position: center;
       }
       @include lg {
          height: 80px;
       }
+   }
+   @include md {
+      padding: 120px 20px;
+   }
+   @include lg {
+      padding: 140px 30px;
+   }
+   @include xl {
+      padding: 160px 30px;
+   }
+   @include xxl {
+      padding: 180px 30px;
+   }
+   @include xxxl {
+      padding: 200px 30px;
    }
 }

@@ -1,14 +1,20 @@
 .btn {
    width: 300px;
    height: 60px;
-   font: var(--font_btn);
    color: var(--color_base);
+   font: var(--font_btn);
    text-align: center;
-   border-radius: 50px;
-   border: 1px solid var(--color_pink);
    background-color: transparent;
-   transition: background-color 0.3s linear;
+   border: 1px solid var(--color_pink);
+   border-radius: 50px;
    cursor: pointer;
+   transition: background-color 0.3s linear;
+
+   &:hover,
+   &:active,
+   &:focus {
+      background-color: var(--color_pink);
+   }
    @include md {
       height: 65px;
    }
@@ -19,10 +25,5 @@
    @include xxl {
       width: 460px;
       height: 90px;
-   }
-   &:hover,
-   &:active,
-   &:focus {
-      background-color: var(--color_pink);
    }
 }

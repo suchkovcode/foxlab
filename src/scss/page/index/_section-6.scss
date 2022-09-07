@@ -1,7 +1,6 @@
 .section-6 {
    &__picture {
       &::before {
-         content: " ";
          position: absolute;
          top: 0;
          left: 0;
@@ -11,6 +10,7 @@
          height: 100%;
          background-color: #000;
          opacity: 0.4;
+         content: " ";
       }
    }
 
@@ -39,25 +39,25 @@
    }
 
    &__content {
-      width: 100%;
       top: 50%;
       left: 50%;
       z-index: 10;
+      width: 100%;
       padding: 0 20px;
       transform: translateY(-50%) translateX(-50%);
    }
 
    &__title {
       margin-bottom: 10px;
-      font: var(--font_sec6_title);
       color: var(--color_base);
+      font: var(--font_sec6_title);
       text-align: center;
    }
 
    &__subtitle {
       margin-bottom: 30px;
-      font: var(--font_subtitle);
       color: var(--color_base);
+      font: var(--font_subtitle);
       text-align: center;
       @include xl {
          font: 400 24px/1.45 "Montserrat";
@@ -65,10 +65,10 @@
    }
 
    &__cta {
-      text-align: center;
-      font: 600 18px/1.45 "Montserrat";
-      color: var(--color_base);
       margin-bottom: 30px;
+      color: var(--color_base);
+      font: 600 18px/1.45 "Montserrat";
+      text-align: center;
       @include md {
          font: 600 20px/1.45 "Montserrat";
       }

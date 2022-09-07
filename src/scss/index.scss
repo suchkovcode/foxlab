@@ -1,20 +1,22 @@
 /* Базовый свойства */
-@import 'base/reset';
-@import 'base/fonts';
-@import 'base/mixin';
-@import 'base/global';
-@import 'base/var';
+@import "base/reset";
+@import "base/fonts";
+@import "base/mixin";
+@import "base/global";
+@import "base/var";
+
 /* Компоненты */
-@import 'components/header';
-@import 'components/footer';
-@import 'components/button';
-@import 'components/modal';
+@import "components/header";
+@import "components/footer";
+@import "components/button";
+@import "components/modal";
+
 /* Страницы */
-@import 'page/index/section-1';
-@import 'page/index/section-2';
-@import 'page/index/section-3';
-@import 'page/index/section-4';
-@import 'page/index/section-5';
-@import 'page/index/section-6';
-@import 'page/index/section-7';
-@import 'page/index/section-8';
+@import "page/index/section-1";
+@import "page/index/section-2";
+@import "page/index/section-3";
+@import "page/index/section-4";
+@import "page/index/section-5";
+@import "page/index/section-6";
+@import "page/index/section-7";
+@import "page/index/section-8";

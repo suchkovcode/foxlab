@@ -1,77 +1,71 @@
 .section-4 {
+   padding: 90px 0;
    overflow-x: hidden;
-   padding: 90px 0px;
    background-color: var(--color_primary);
    contain: layout paint;
-   @include lg {
-      padding: 120px 0px;
-   }
-   @include xl {
-      padding: 140px 0px;
-   }
-   @include xxl {
-      padding: 160px 0px;
-   }
 
    &__marquee {
       &-text {
          display: inline-block;
-         font: 400 45px/1 "Circe";
          height: 38px;
+         font: 400 45px/1 "Circe";
          @include md {
-            font: 400 50px/1 "Circe";
             height: 43px;
+            font: 400 50px/1 "Circe";
          }
          @include xl {
-            font: 400 60px/1 "Circe";
             height: 53px;
+            font: 400 60px/1 "Circe";
          }
       }
+
       &-elipse {
          display: inline-block;
          min-width: 8px;
          min-height: 8px;
-         border-radius: 50px;
          background-color: var(--color_text);
+         border-radius: 50px;
       }
    }
+
    .js-marquee-wrapper {
-      overflow: hidden;
       display: flex;
+      overflow: hidden;
    }
+
    .js-marquee {
       display: flex;
-      align-items: center;
       gap: 20px;
+      align-items: center;
    }
 
    &__img-box {
-      grid-template-columns: 1fr 1fr;
       grid-template-areas:
          "img_1 img_2"
          "img_3 img_3"
          "img_4 img_5";
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
       margin: 30px 0;
       padding: 0 20px;
-      gap: 15px;
       @include sm {
          margin: 40px 0;
       }
       @include md {
-         grid-template-columns: 1fr 1fr 1fr;
          grid-template-areas:
             "img_1 img_5 img_4"
             "img_2 img_3 img_3";
+         grid-template-columns: 1fr 1fr 1fr;
       }
       @include lg {
-         grid-template-columns: 1fr 1fr 1fr 1fr;
          grid-template-areas:
             "img_1 img_5 . img_4"
             ". img_2 img_3 img_3";
-         padding: 0 30px;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
          gap: 25px;
+         padding: 0 30px;
       }
-      @include xxl{
+      @include xxl {
          margin: 60px 0;
       }
    }
@@ -79,6 +73,7 @@
    &__picture-1 {
       grid-area: img_1;
    }
+
    &__picture-2 {
       grid-area: img_2;
    }
@@ -86,10 +81,11 @@
    &__picture-3 {
       grid-area: img_3;
    }
+
    &__img-3 {
+      max-height: 435px;
       object-fit: cover;
       object-position: top;
-      max-height: 435px;
       @include sm {
          height: 340px;
       }
@@ -100,24 +96,34 @@
          height: clamp(18.93rem, -3.4377rem + 36.0769vw, 23.62rem);
       }
       @include xl {
-         height: clamp(23.62rem, -2.6600rem + 35.0400vw, 28rem);
+         height: clamp(23.62rem, -2.66rem + 35.04vw, 28rem);
          max-height: 100%;
       }
       @include xxl {
-         height: clamp(28rem, -3.1360rem + 35.5840vw, 33.56rem);
+         height: clamp(28rem, -3.136rem + 35.584vw, 33.56rem);
       }
       @include xxxl {
          height: clamp(33.56rem, -2.8669rem + 35.3231vw, 36.43rem);
       }
       @media (min-width: 1780px) {
-         height: clamp(36.43rem, -3.0860rem + 35.5200vw, 40.87rem);
+         height: clamp(36.43rem, -3.086rem + 35.52vw, 40.87rem);
       }
    }
 
    &__picture-4 {
       grid-area: img_4;
    }
+
    &__picture-5 {
       grid-area: img_5;
+   }
+   @include lg {
+      padding: 120px 0;
+   }
+   @include xl {
+      padding: 140px 0;
+   }
+   @include xxl {
+      padding: 160px 0;
    }
 }

@@ -1,26 +1,21 @@
 .modal {
-   visibility: hidden;
    top: 0;
    left: 0;
    z-index: 100;
    width: 100%;
    height: 100%;
    margin: 0;
-   padding: 0px;
-   opacity: 0;
+   padding: 0;
    border-width: 0;
+   visibility: hidden;
+   opacity: 0;
    transition: all 0.3s linear;
-   &.open {
-      display: flex;
-      overflow-y: scroll;
-      visibility: visible;
-      opacity: 1;
-   }
+
    &__overlay {
-      height: 100%;
       top: 0;
       left: 0;
       z-index: -1;
+      height: 100%;
       background-color: #000;
       opacity: 0.4;
       @include md {
@@ -41,30 +36,33 @@
    }
 
    &__close-btn {
-      cursor: pointer;
       top: 15px;
       right: 15px;
       width: 45px;
       height: 45px;
       padding: 10px;
       border-radius: 100%;
+      cursor: pointer;
       transition: 0.2s linear;
+
       &:hover {
          background-color: var(--color_pink);
       }
    }
+
    &__close-icon {
       width: 100%;
       height: 2px;
       transform: rotate(-45deg);
+
       &::after {
-         content: " ";
          position: relative;
          display: block;
          width: 100%;
          height: 2px;
          background-color: inherit;
          transform: rotate(90deg);
+         content: " ";
       }
    }
 
@@ -74,40 +72,48 @@
       max-height: 340px;
       object-fit: cover;
       @include md {
-         border-radius: 20px 20px 0px 0px;
+         border-radius: 20px 20px 0 0;
       }
    }
 
    &__content {
       padding: 30px 25px;
       @include md {
-         border-radius: 0px 0px 20px 20px;
+         border-radius: 0 0 20px 20px;
       }
    }
 
    &__title {
-      font: 600 24px/1.3 "Circe";
       margin-bottom: 15px;
+      font: 600 24px/1.3 "Circe";
    }
 
    &__subtitle {
-      font: 400 14px/1.45 "Montserrat";
       margin-bottom: 30px;
+      font: 400 14px/1.45 "Montserrat";
+   }
+
+   &.open {
+      display: flex;
+      overflow-y: scroll;
+      visibility: visible;
+      opacity: 1;
    }
 }
+
 .form {
    &__checkbox-container {
       margin-bottom: 30px;
    }
 
    &__title {
-      font: 600 18px/1.3 "Montserrat";
       margin-bottom: 5px;
+      font: 600 18px/1.3 "Montserrat";
    }
 
    &__subtitle {
-      font: 400 14px/1.45 "Montserrat";
       margin-bottom: 20px;
+      font: 400 14px/1.45 "Montserrat";
    }
 
    &__checkbox-item {
@@ -115,52 +121,58 @@
       margin-bottom: 10px;
    }
 
-   &__checkbox-input {
-      z-index: -1;
-      opacity: 0;
-      width: 25px;
-      height: 25px;
-      &:checked ~ .form__checkbox-label::before {
-         background-color: var(--color_secondary);
-      }
-      &:checked ~ .form__checkbox-label::after {
-         color: var(--color_base);
-      }
-   }
-
    &__checkbox-label {
       font: 400 18px/1 "Montserrat";
       cursor: pointer;
+
       &::before {
-         content: " ";
-         cursor: pointer;
          position: absolute;
          top: 0;
          left: 0;
          width: 25px;
          height: 25px;
-         border-radius: 4px;
-         border: 1px solid var(--color_secondary);
          background-color: var(--color_base);
+         border: 1px solid var(--color_secondary);
+         border-radius: 4px;
+         cursor: pointer;
          transition: all 0.2s linear;
+         content: " ";
       }
+
       &::after {
-         content: "\2714";
          position: absolute;
          top: 2px;
          left: 4px;
          display: inline-block;
          width: 25px;
          height: 25px;
-         font-size: 22px;
          color: transparent;
+         font-size: 22px;
          transition: all 0.2s ease-in-out 0.1s;
+         content: "\2714";
       }
    }
+
+   &__checkbox-input {
+      z-index: -1;
+      width: 25px;
+      height: 25px;
+      opacity: 0;
+
+      &:checked ~ .form__checkbox-label::before {
+         background-color: var(--color_secondary);
+      }
+
+      &:checked ~ .form__checkbox-label::after {
+         color: var(--color_base);
+      }
+   }
+
    &__input-container {
       gap: 25px;
       margin-bottom: 30px;
    }
+
    &__input-label {
       margin-bottom: 10px;
       font: 400 16px/1 "Montserrat";
@@ -169,25 +181,28 @@
    &__input-text {
       width: 100%;
       height: 45px;
-      border-radius: 7px;
       padding: 0 15px;
-      border: 1px solid var(--color_secondary);
       font: 400 16px/1 "Circe";
-      @include md {
-         height: 50px;
-      }
+      border: 1px solid var(--color_secondary);
+      border-radius: 7px;
+
       &::placeholder {
+         color: rgb(187 187 187);
          font: 400 16px/1 "Circe";
-         color: rgb(187, 187, 187);
       }
+
       &:focus {
          border: 1px solid var(--color_pink);
+      }
+      @include md {
+         height: 50px;
       }
    }
 
    &__input-error {
       border: 1px solid red !important;
    }
+
    &__label-error {
       margin-top: 2px;
       color: red !important;
@@ -198,23 +213,26 @@
    }
 
    &__btn {
-      cursor: pointer;
       width: 100%;
       height: 50px;
-      border-radius: 50px;
-      font: 600 16px/1.45 "Montserrat";
-      color: var(--color_base);
-      transition: all 0.2s linear;
       margin-bottom: 20px;
+      color: var(--color_base);
+      font: 600 16px/1.45 "Montserrat";
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.2s linear;
+
       &:hover {
          background-color: var(--color_pink);
       }
    }
+
    &__policy {
+      color: rgb(114 114 114);
       font: 400 13px/1.45 "Montserrat";
-      color: rgb(114, 114, 114);
       text-align: center;
    }
+
    &__mark {
       color: var(--color_pink);
    }

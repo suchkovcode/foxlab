@@ -1,20 +1,6 @@
 .section-7 {
    padding: 90px 20px;
-   @include md {
-      padding: 120px 20px;
-   }
-   @include lg {
-      padding: 140px 30px;
-   }
-   @include xl {
-      padding: 160px 30px;
-   }
-   @include xxl {
-      padding: 180px 30px;
-   }
-   @include xxxl {
-      padding: 200px 30px;
-   }
+
    &__header {
       margin-bottom: 30px;
       @include lg {
@@ -30,37 +16,37 @@
       grid-template-columns: 1fr;
       gap: 20px;
       @include md {
-         grid-template-columns: 1fr 1fr;
          grid-template-areas:
             "card_1 card_2"
             "video video";
+         grid-template-columns: 1fr 1fr;
       }
       @include lg {
-         grid-template-columns: 1fr 1fr 1fr;
          grid-template-areas: "video card_1 card_2";
+         grid-template-columns: 1fr 1fr 1fr;
       }
    }
 
    &__img {
-      object-position: top;
       object-fit: cover;
+      object-position: top;
       @include sm {
          height: 500px;
       }
       @include md {
          height: 580px;
       }
-      @include xxl{
+      @include xxl {
          height: 640px;
       }
-      @include xxxl{
+      @include xxxl {
          height: 690px;
       }
    }
 
    &__card-info {
+      bottom: 0;
       left: 0;
-      bottom: 0px;
       padding: 20px;
       @include md {
          height: 305px;
@@ -72,21 +58,20 @@
          height: 310px;
       }
       @include xxl {
-         padding: 30px;
          height: 355px;
+         padding: 30px;
       }
    }
 
    &__card-tag {
       margin-bottom: 25px;
       padding: 8px 15px;
-      font: var(--font_card_tag);
       color: var(--color_text);
+      font: var(--font_card_tag);
       border: 1px solid var(--color_text);
       @include xxl {
          padding: 10px 18px;
       }
- 
    }
 
    &__card-title {
@@ -107,8 +92,8 @@
          height: 550px;
       }
       @include md {
-         height: 680px;
          grid-area: card_1;
+         height: 680px;
       }
       @include xxl {
          height: 800px;
@@ -117,6 +102,7 @@
          height: 950px;
       }
    }
+
    &__card-2 {
       height: 650px;
       @include sm {
@@ -140,8 +126,8 @@
    }
 
    &__video {
-      object-position: top;
       object-fit: cover;
+      object-position: top;
       @include md {
          object-position: center;
       }
@@ -154,5 +140,20 @@
       @include xxxl {
          height: 950px;
       }
+   }
+   @include md {
+      padding: 120px 20px;
+   }
+   @include lg {
+      padding: 140px 30px;
+   }
+   @include xl {
+      padding: 160px 30px;
+   }
+   @include xxl {
+      padding: 180px 30px;
+   }
+   @include xxxl {
+      padding: 200px 30px;
    }
 }
