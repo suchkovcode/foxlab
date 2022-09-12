@@ -2,8 +2,8 @@ admin/
 build/
 dist/
 public/
-img/
 video/
+img/
 fonts/
 node_modules/
 package-lock.json
