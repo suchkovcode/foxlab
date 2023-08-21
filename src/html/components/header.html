@@ -1,7 +1,7 @@
 <header class="header p-a">
    <div class="container">
       <div class="header__flex-container d-f ai-c">
-         <a class="header__logo @if(context.page){@page} p-r d-b" href="/">
+         <a class="header__logo @if(context.page){@page} p-r d-b" href="/" aria-label="Logo link">
             <svg
                class="header__logo-img"
                width="120"
@@ -32,7 +32,7 @@
                   fill="#fff" />
             </svg>
          </a>
-         <a class="header__toggler @if(context.page){@border}" role="button">
+         <a class="header__toggler @if(context.page){@border}" role="button" aria-label="Burger btn">
             <span class="header__toggler-icon"></span>
          </a>
          <nav class="header__nav">
