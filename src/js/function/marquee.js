@@ -1,3 +1,7 @@
+import $ from "jquery";
+import "jquery.marquee";
+
+
 export const marquee = (() => {
    $(".section-4__marquee-1").marquee({
       duration: 21000,

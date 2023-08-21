@@ -1,4 +1,3 @@
-"use strict";
 import "./function/burger";
 import "./function/lazy";
 import "./function/marquee";

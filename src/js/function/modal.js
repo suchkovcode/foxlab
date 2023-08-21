@@ -1,3 +1,9 @@
+// @ts-nocheck
+
+import JustValidate from "just-validate";
+import Cleave from "cleave.js";
+import "cleave.js/dist/addons/cleave-phone.us";
+
 export const modal = (() => {
    if (window.location.pathname == "/") {
       const openModal = document.getElementById("popUpBtn");
@@ -18,7 +24,7 @@ export const modal = (() => {
          dialog.classList.remove("open");
       });
 
-      const validate = new window.JustValidate(".form", {
+      const validate = new JustValidate(".form", {
          errorFieldCssClass: "form__input-error",
          successFieldCssClass: "form__input-success",
 
@@ -62,7 +68,8 @@ export const modal = (() => {
                errorMessage: "Maximum 13 characters",
             },
          ]);
-      let cleave = new Cleave("#inputTel", {
+
+      new Cleave("#inputTel", {
          phone: true,
          phoneRegionCode: "US",
       });

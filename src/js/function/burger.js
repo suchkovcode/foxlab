@@ -1,3 +1,4 @@
+// @ts-nocheck
 export const burger = (() => {
    const burger = document.querySelector(".header__toggler");
    const dropdown = document.querySelector(".header__dropdown-toggle");
